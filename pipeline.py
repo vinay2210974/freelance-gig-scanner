@@ -47,7 +47,7 @@ WEIGHTS = {r"\brag\b|retrieval[- ]augmented": 2.5, r"langchain|langgraph|llama ?
     r"pyspark|databricks": 1, r"dashboards?|streamlit|plotly": 0.5, r"data scien|machine learning|\bnlp\b": 1}
 SKILL_RE = re.compile("|".join(f"(?:{k})" for k in WEIGHTS), re.I)
 CORE_RE = re.compile(r"\b(ai|llms?|chat ?bots?|automations?|agents?|voice|speech|data|intelligence|workflows?|python|n8n|chat ?gpt|apis?|whatsapp|e-?mails?|websites?|web ?apps?|apps?)\b", re.I)
-SKIP_TITLE = re.compile(r"\b(it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
+SKIP_TITLE = re.compile(r"\b(cold call|telecall|tele-call|caller|appointment setter|sales rep|lead generation|linkedin expert|site verification|video|course|graphic design|it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
     r"thesis|dissertation|virtual assistant)\b", re.I)
 RED_FLAG = re.compile(r"telegram|contact (me )?on whatsapp|unpaid|free (trial|test)|test task without pay|commission only|"
     r"pay (a )?(fee|deposit)|equity only", re.I)
