@@ -1,0 +1,16 @@
+# Secrets and local-only files — never commit
+wa_token.txt
+ntfy_topic.txt
+settings.env
+.env
+*.pem
+
+# Generated on the runner / box, not part of the public repo
+drafts/
+__pycache__/
+*.pyc
+scanner.pid
+loop.out
+fit_profile.md
+feedback.md
+reviewed_urls.txt
