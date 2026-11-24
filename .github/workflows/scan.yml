@@ -87,7 +87,7 @@ jobs:
 
           commit_state() {
             local f i
-            for f in seen_ids.txt state.json shortlist.jsonl new_matches.csv scanner.log; do
+            for f in seen_ids.txt state.json shortlist.jsonl new_matches.csv pending_review.jsonl scanner.log; do
               [ -f "$f" ] && git add -- "$f"
             done
             if git diff --cached --quiet; then

@@ -1,6 +1,6 @@
 # Freelancer.in gig scanner
 
-Scans [freelancer.in](https://www.freelancer.in/) for new gigs matching Vinay's filters, scores each one 0-10 from [`scoring.json`](scoring.json), and notifies the review webhook when the fit score is at or above `fit_alert` (currently 7). **Never submits bids.** Direct WhatsApp and ntfy alerts are off by default (`WA_DIRECT=0`).
+Scans [freelancer.in](https://www.freelancer.in/) for new gigs matching Vinay's filters, scores each one 0-10 from [`scoring.json`](scoring.json), and notifies the review webhook when the fit score is at or above `fit_alert` (currently 4). **Never submits bids.** Direct WhatsApp and ntfy alerts are off by default (`WA_DIRECT=0`).
 
 A single GitHub Actions job stays running for about 5 hours 40 minutes and scans **every 2 minutes** between **08:00 and 23:30 IST** (`Asia/Kolkata`). Outside that window it sleeps 10 minutes so the job stays alive. When the job is about to hit the Actions timeout, it dispatches the next run of itself. An hourly cron (`7 * * * *`) is only a backup restarter, because GitHub scheduled workflows are unreliable (especially on new repos). If a backup trigger starts while another run is already in progress, the new job exits immediately.
 
@@ -25,7 +25,7 @@ Scores come from [`scoring.json`](scoring.json) (edit that file to tune; no code
 - Small bonuses for 0-5 bids, payment-verified + deposit, and a sane budget (hourly ≥ $5, fixed ≥ ~$30)
 - Final score is clamped to 0-10
 
-Gigs at or above `fit_alert` (7) are appended to `shortlist.jsonl` (with `fit_score` and `matched` terms) and POSTed in one batch to `ROUTINE_WEBHOOK_URL` with `Authorization: Bearer $ROUTINE_WEBHOOK_SECRET`. If the webhook secret is unset, the scan logs `webhook secret missing` and continues. Every hard-filter pass, including low-score gigs, is logged to `new_matches.csv`.
+Gigs at or above `fit_alert` (4) are appended to `shortlist.jsonl` (with `fit_score` and `matched` terms). Each scan POSTs its qualifying gigs immediately to `ROUTINE_WEBHOOK_URL` (`Authorization: Bearer $ROUTINE_WEBHOOK_SECRET`), batched only within that scan, max 10, highest fit first. A 2-minute minimum gap merges back-to-back scans (`webhook_min_interval_min` in `scoring.json`, currently 0, with a 2-minute floor). Leftovers and held gigs sit in `pending_review.jsonl`. If the webhook secret is unset, the scan logs `webhook secret missing` and keeps them pending. Every hard-filter pass, including low-score gigs, is logged to `new_matches.csv`.
 
 Record feedback on the box clone with:
 
@@ -66,6 +66,6 @@ Set these on the repo (Settings → Secrets and variables → Actions):
 
 ## State files committed back after each scan
 
-`seen_ids.txt`, `state.json`, `shortlist.jsonl`, `new_matches.csv`, `scanner.log` (trimmed to the last 500 lines). Bid drafts are written on the runner only and are not committed.
+`seen_ids.txt`, `state.json`, `shortlist.jsonl`, `new_matches.csv`, `pending_review.jsonl`, `scanner.log` (trimmed to the last 500 lines). Bid drafts are written on the runner only and are not committed.
 
 Commits use `[skip ci]` so the state push does not trigger another scan.

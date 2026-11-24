@@ -5,7 +5,10 @@ fetch (Freelancer India public API) -> hard filters (payment verified,
 <=15 bids, keywords, budget, skip-title list) -> dedupe -> fit score
 0-10 from scoring.json (title matches weigh more than description) ->
 gigs at or above fit_alert go to shortlist.jsonl + drafts/<id>.md
-(bid draft, not committed) and a webhook POST for human review.
+(bid draft, not committed). Each scan POSTs qualifying gigs immediately
+for human review (max 10, highest fit first), with a 2-minute minimum
+gap so back-to-back scans merge. webhook_min_interval_min in scoring.json
+is the configurable interval (0 = every scan, still floored at 2 minutes).
 Direct WhatsApp / ntfy alerts are off unless WA_DIRECT=1.
 Every hard-filter pass is logged to new_matches.csv.
 NEVER submits bids. NEVER sends WhatsApp unless WA_DIRECT=1 or --wa-test.
@@ -27,6 +30,9 @@ STATE = os.path.join(BASE, "state.json")
 LOG = os.path.join(BASE, "scanner.log")
 CSV_OUT = os.path.join(BASE, "new_matches.csv")
 SHORTLIST = os.path.join(BASE, "shortlist.jsonl")
+PENDING = os.path.join(BASE, "pending_review.jsonl")
+WEBHOOK_BATCH = 10
+WEBHOOK_MIN_GAP_MIN = 2  # merge back-to-back scans even when interval is 0
 DRAFTS = os.path.join(BASE, "drafts")
 PROFILE = os.path.join(BASE, "fit_profile.md")
 FEEDBACK = os.path.join(BASE, "feedback.md")
@@ -300,7 +306,7 @@ def keyword_score(g, cfg=None):
         s -= float(penalties.get("red_flag", 4))
         flags.append("red flag wording")
     s = max(0.0, min(10.0, round(s, 1)))
-    alert = float(cfg.get("fit_alert", 7))
+    alert = float(cfg.get("fit_alert", 4))
     reason_bits = ["matched: " + ", ".join(matched[:10])]
     if flags:
         reason_bits.append(", ".join(flags))
@@ -314,32 +320,94 @@ def keyword_score(g, cfg=None):
     }
 
 
-def notify_webhook(gigs, cfg):
-    """POST qualifying gigs to ROUTINE_WEBHOOK_URL. Never log the secret."""
-    if not gigs:
-        log(f"webhook: no gigs at or above fit_alert {cfg.get('fit_alert', 7)}")
-        return
-    url = (os.environ.get("ROUTINE_WEBHOOK_URL") or "").strip()
-    secret = (os.environ.get("ROUTINE_WEBHOOK_SECRET") or "").strip()
-    if not url:
-        log("webhook skipped: ROUTINE_WEBHOOK_URL unset")
-        return
-    if not secret:
-        log("webhook secret missing")
-        return
+def _norm_url(url):
+    return (url or "").strip().rstrip("/")
+
+
+def pending_record(g):
+    desc = g.get("description") or g.get("snippet") or ""
+    return {
+        "title": g.get("title") or "",
+        "url": g.get("url") or "",
+        "budget": g.get("budget_usd") or g.get("budget") or "",
+        "bids": g.get("bids"),
+        "payment_verified": bool(g.get("payment_verified")),
+        "fit_score": g.get("fit_score"),
+        "matched": g.get("matched") or [],
+        "snippet": desc[:600],
+        "found_at": g.get("found_at"),
+    }
+
+
+def load_pending():
+    rows = []
+    if not os.path.exists(PENDING):
+        return rows
+    with open(PENDING) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    return rows
+
+
+def save_pending(rows):
+    with open(PENDING, "w") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+def append_pending(gigs):
+    """Append fit-alert gigs to pending_review.jsonl, deduped by url."""
+    pending = load_pending()
+    seen = {_norm_url(r.get("url")) for r in pending}
+    added = 0
+    for g in gigs:
+        url = _norm_url(g.get("url"))
+        if not url or url in seen:
+            continue
+        pending.append(pending_record(g))
+        seen.add(url)
+        added += 1
+    save_pending(pending)
+    if added or pending:
+        log(f"pending: added {added}, queue {len(pending)}")
+    return pending, added
+
+
+def webhook_gap_sec(cfg):
+    """Interval from scoring.json, floored at 2 minutes to merge back-to-back scans."""
+    interval = float(cfg.get("webhook_min_interval_min", 0) or 0)
+    return max(interval, WEBHOOK_MIN_GAP_MIN) * 60
+
+
+def _webhook_payload(gigs):
     body = {"gigs": []}
     for g in gigs:
-        desc = g.get("description") or ""
         body["gigs"].append({
             "title": g.get("title") or "",
             "url": g.get("url") or "",
-            "budget": g.get("budget_usd") or g.get("budget") or "",
+            "budget": g.get("budget") or "",
             "bids": g.get("bids"),
             "payment_verified": bool(g.get("payment_verified")),
             "fit_score": g.get("fit_score"),
             "matched": g.get("matched") or [],
-            "snippet": desc[:600],
+            "snippet": (g.get("snippet") or g.get("description") or "")[:600],
         })
+    return body
+
+
+def _post_webhook(gigs):
+    """POST gigs. Returns True on HTTP 2xx. Never logs the secret."""
+    url = (os.environ.get("ROUTINE_WEBHOOK_URL") or "").strip()
+    secret = (os.environ.get("ROUTINE_WEBHOOK_SECRET") or "").strip()
+    if not url:
+        log("webhook skipped: ROUTINE_WEBHOOK_URL unset")
+        return False
+    if not secret:
+        log("webhook secret missing")
+        return False
+    body = _webhook_payload(gigs)
     try:
         r = requests.post(
             url,
@@ -348,11 +416,48 @@ def notify_webhook(gigs, cfg):
             timeout=20,
         )
         log(f"webhook HTTP {r.status_code} ({len(body['gigs'])} gig(s))")
+        return 200 <= r.status_code < 300
     except Exception as e:
         err = str(e)
         if secret:
             err = err.replace(secret, "[redacted]")
         log(f"webhook failed: {err}")
+        return False
+
+
+def maybe_flush_webhook(cfg, st, now=None):
+    """POST pending gigs immediately, with a small gap to merge back-to-back scans.
+
+    Batch is max 10, highest fit first. Leftovers stay in pending_review.jsonl.
+    On HTTP 2xx, sent rows are cleared and state last_webhook_at is set.
+    """
+    now = time.time() if now is None else now
+    pending = load_pending()
+    alert = float(cfg.get("fit_alert", 4))
+    gap = webhook_gap_sec(cfg)
+    last = float(st.get("last_webhook_at") or 0)
+    if not pending:
+        log(f"webhook: pending empty (fit_alert {alert})")
+        return st
+    elapsed = now - last if last else float("inf")
+    if elapsed < gap:
+        remain_min = max(0, int((gap - elapsed + 59) // 60))
+        log(f"webhook: holding {len(pending)} pending, {int(gap // 60)}m gap, next in ~{remain_min} min")
+        return st
+    pending_sorted = sorted(
+        pending,
+        key=lambda g: (-float(g.get("fit_score") or 0), _norm_url(g.get("url"))),
+    )
+    batch, leftovers = pending_sorted[:WEBHOOK_BATCH], pending_sorted[WEBHOOK_BATCH:]
+    log(f"webhook: flushing {len(batch)} (queue had {len(pending)})")
+    if _post_webhook(batch):
+        save_pending(leftovers)
+        st = dict(st)
+        st["last_webhook_at"] = now
+        log(f"webhook flushed {len(batch)}, {len(leftovers)} still pending")
+    else:
+        log("webhook flush failed, pending kept")
+    return st
 
 
 def openai_score(g):
@@ -451,7 +556,7 @@ def scan():
     log(f"freelancer.in API: {ok_queries}/{len(QUERIES)} queries ok, {len(cands)} unique projects since {int(since)}")
     passed, shortlisted, checked = [], [], 0
     cfg = load_scoring()
-    alert = float(cfg.get("fit_alert", 7))
+    alert = float(cfg.get("fit_alert", 4))
     ntfy = topic()
     direct = wa_direct_on()
     wa_tok, wa_phone, wa_to = wa_creds()
@@ -547,7 +652,9 @@ def scan():
             log("whatsapp skipped: WA_PHONE_ID or WA_TO not set")
         if direct:
             time.sleep(0.5)
-    notify_webhook(shortlisted, cfg)
+    append_pending(shortlisted)
+    st = maybe_flush_webhook(cfg, st, now)
+    json.dump(st, open(STATE, "w"))
     scores = ", ".join(f"{g['title'][:40]}={g['fit_score']}" for g in passed) or "none"
     log(f"scan done: {len(cands)} fetched, {checked} page-checked, {len(passed)} passed hard filters, "
         f"{len(shortlisted)} shortlisted (>= fit_alert {alert}), scores: {scores}")
@@ -602,7 +709,7 @@ def loop():
 def calibrate():
     """Score fixtures + shortlist.jsonl and print a table. Does not write state or send alerts."""
     cfg = load_scoring()
-    alert = float(cfg.get("fit_alert", 7))
+    alert = float(cfg.get("fit_alert", 4))
     rows = []
     rag = {
         "title": "Build a RAG chatbot with LangChain in Python",
