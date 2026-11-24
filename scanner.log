@@ -59,3 +59,8 @@
 2026-11-24 19:58:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 19:58:24 IST webhook: no gigs at or above fit_alert 7
 2026-11-24 19:58:24 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 7.0), scores: none
+2026-11-24 20:00:24 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795530178
+2026-11-24 20:00:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 20:00:26 IST fit 1.6/10 'GEO AEO Brand Mentions Reseller Partnership' matched=['gpt', 'website', 'ai']
+2026-11-24 20:00:26 IST webhook: no gigs at or above fit_alert 4
+2026-11-24 20:00:26 IST scan done: 4 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: GEO AEO Brand Mentions Reseller Partners=1.6
