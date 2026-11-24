@@ -1,7 +1,3 @@
-2026-11-24 19:30:30 IST whatsapp test delivered as plain text
-2026-11-24 19:30:52 IST freelancer.in API: 19/19 queries ok, 70 unique projects since 1795518080
-2026-11-24 19:30:52 IST whatsapp alerts: configured
-2026-11-24 19:31:20 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSOUIwQ0E3OEExNDY2QTI1OTQ4AA=="}]}
 2026-11-24 19:31:21 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSN0M0NTE5QjAzQzkzRUQ4MTEwAA=="}]}
 2026-11-24 19:31:22 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSMjMxN0I4RjczOUYxMjg4QTg0AA=="}]}
 2026-11-24 19:31:23 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSQzBGNkM4QTAzMTVGNEM5MkJGAA=="}]}
@@ -498,3 +494,7 @@
 2026-11-24 23:24:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 23:24:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 23:24:26 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-24 23:26:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795542539
+2026-11-24 23:26:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 23:26:26 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 23:26:26 IST scan done: 3 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
