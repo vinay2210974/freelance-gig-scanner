@@ -274,3 +274,8 @@
 2026-11-24 21:40:30 IST webhook HTTP 200 (1 gig(s))
 2026-11-24 21:40:30 IST webhook flushed 1, 0 still pending
 2026-11-24 21:40:30 IST scan done: 6 fetched, 3 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: AI Chatbot testing - Native Malay=8.7
+2026-11-24 21:42:24 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795536298
+2026-11-24 21:42:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 21:42:25 IST fit 0.0/10 'Daily Power Apps Support Needed' matched=[]
+2026-11-24 21:42:25 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 21:42:25 IST scan done: 6 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Daily Power Apps Support Needed=0.0
