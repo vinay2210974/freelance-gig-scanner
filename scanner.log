@@ -361,3 +361,11 @@
 2026-11-24 22:18:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 22:18:24 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 22:18:24 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-24 22:20:25 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795538578
+2026-11-24 22:20:25 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 22:20:28 IST fit 4.1/10 'Beginner Website Tutorial Videos' matched=['gpt', 'website', 'ai']
+2026-11-24 22:20:28 IST pending: added 1, queue 1
+2026-11-24 22:20:28 IST webhook: flushing 1 (queue had 1)
+2026-11-24 22:20:29 IST webhook HTTP 200 (1 gig(s))
+2026-11-24 22:20:29 IST webhook flushed 1, 0 still pending
+2026-11-24 22:20:29 IST scan done: 3 fetched, 2 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: Beginner Website Tutorial Videos=4.1
