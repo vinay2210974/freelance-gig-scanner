@@ -50,3 +50,8 @@
 2026-11-24 19:54:52 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 19:54:52 IST webhook: no gigs at or above fit_alert 7
 2026-11-24 19:54:52 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 7.0), scores: none
+2026-11-24 19:56:51 IST freelancer.in API: 19/19 queries ok, 6 unique projects since 1795529971
+2026-11-24 19:56:51 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 19:56:53 IST fit 1.1/10 ' ESP32 Startup & W5500 problem fix  (EasyEDA Pro)' matched=['gpt']
+2026-11-24 19:56:53 IST webhook: no gigs at or above fit_alert 7
+2026-11-24 19:56:53 IST scan done: 6 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 7.0), scores:  ESP32 Startup & W5500 problem fix  (Eas=1.1
