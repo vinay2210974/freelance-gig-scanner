@@ -2,16 +2,19 @@
 """Vinay's freelance gig pipeline (GitHub Actions / local --once).
 
 fetch (Freelancer India public API) -> hard filters (payment verified,
-<=15 bids, keywords, budget, skip trading) -> dedupe -> fit score
-(keyword rules; OpenAI only if OPENAI_API_KEY is set) -> worth-trying
-gigs go to shortlist.jsonl + drafts/<id>.md (bid draft, not committed)
-+ ntfy + WhatsApp. Every hard-filter pass is logged to new_matches.csv.
-NEVER submits bids.
+<=15 bids, keywords, budget, skip-title list) -> dedupe -> fit score
+0-10 from scoring.json (title matches weigh more than description) ->
+gigs at or above fit_alert go to shortlist.jsonl + drafts/<id>.md
+(bid draft, not committed) and a webhook POST for human review.
+Direct WhatsApp / ntfy alerts are off unless WA_DIRECT=1.
+Every hard-filter pass is logged to new_matches.csv.
+NEVER submits bids. NEVER sends WhatsApp unless WA_DIRECT=1 or --wa-test.
 
-Usage: python pipeline.py --once | --loop | --wa-test
+Usage: python pipeline.py --once | --loop | --wa-test | --calibrate
   --once (default): one scan, skip if outside 08:00-23:30 Asia/Kolkata.
   --loop: box loop every SCAN_EVERY_MIN minutes inside the same window.
-  --wa-test: send one short WhatsApp connectivity test (same code path as alerts).
+  --wa-test: send one short WhatsApp connectivity test (manual only).
+  --calibrate: score built-in fixtures and shortlist.jsonl, print a table.
 """
 import csv, json, os, re, sys, time, datetime, random
 from zoneinfo import ZoneInfo
@@ -27,6 +30,7 @@ SHORTLIST = os.path.join(BASE, "shortlist.jsonl")
 DRAFTS = os.path.join(BASE, "drafts")
 PROFILE = os.path.join(BASE, "fit_profile.md")
 FEEDBACK = os.path.join(BASE, "feedback.md")
+SCORING_PATH = os.path.join(BASE, "scoring.json")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 API = "https://www.freelancer.in/api/projects/0.1/projects/active/"
 SITE = "https://www.freelancer.in/projects/"
@@ -38,17 +42,9 @@ WORTH = float(os.environ.get("WORTH", "0"))
 LOOKBACK_FIRST = 3 * 3600
 SCAN_TIMEOUT_SEC = int(os.environ.get("SCAN_TIMEOUT_SEC", "420"))
 
-# keyword -> weight for fit scoring
-WEIGHTS = {r"\brag\b|retrieval[- ]augmented": 2.5, r"langchain|langgraph|llama ?index": 2.5,
-    r"\bllms?\b|large language model": 2, r"gen ?ai|generative ai": 2, r"\bagents?\b|agentic|tool calling": 2,
-    r"openai|azure openai|gpt-?\d|chat ?gpt|claude|gemini": 1.5, r"vector|embedding|faiss|pinecone|weaviate|pgvector|chroma": 1.5,
-    r"\bpython\b": 1.5, r"fastapi": 1.5, r"chat ?bots?": 1, r"ai automation|n8n|automation": 0.5,
-    r"\bocr\b|document (extraction|parsing)|pdf": 1, r"voice (assistant|agent|bot)": 1,
-    r"pyspark|databricks": 1, r"dashboards?|streamlit|plotly": 0.5, r"data scien|machine learning|\bnlp\b": 1}
-SKILL_RE = re.compile("|".join(f"(?:{k})" for k in WEIGHTS), re.I)
 CORE_RE = re.compile(r"\b(ai|llms?|chat ?bots?|automations?|agents?|voice|speech|data|intelligence|workflows?|python|n8n|chat ?gpt|apis?|whatsapp|e-?mails?|websites?|web ?apps?|apps?)\b", re.I)
 SKIP_TITLE = re.compile(r"\b(cold call|telecallers?|tele-callers?|telecalling|caller|appointment setter|sales rep|lead generation|linkedin expert|site verification|video|course|graphic design|it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
-    r"thesis|dissertation|virtual assistant)\b", re.I)
+    r"thesis|dissertation|virtual assistant|arbitrage|algorithmic trading)\b", re.I)
 RED_FLAG = re.compile(r"telegram|contact (me )?on whatsapp|unpaid|free (trial|test)|test task without pay|commission only|"
     r"pay (a )?(fee|deposit)|equity only", re.I)
 OFF_STACK = re.compile(r"\b(flutter|react native|swift|kotlin|unity|php|laravel|wordpress|shopify|\.net|c#)\b", re.I)
@@ -206,28 +202,155 @@ def usd(p):
     return (b.get("minimum") or 0) * rate, (b.get("maximum") or b.get("minimum") or 0) * rate
 
 
-# ---------- scoring ----------
-def keyword_score(g):
-    text = g["title"] + " " + g["description"] + " " + g["skills"]
-    hits = [k for k in WEIGHTS if re.search(k, text, re.I)]
-    s = min(7.0, sum(WEIGHTS[k] for k in hits))
-    _, hi = g["_usd"]
-    s += 1 if (g["type"] == "hourly" and hi >= 25) or (g["type"] == "fixed" and hi >= 300) else 0
-    s += 1 if g["deposit_made"] else 0
-    s += 0.5 if g["client_reviews"] > 0 and g["client_rating"] >= 4 else 0
-    s += 0.5 if g["bids"] <= 3 else 0
-    reasons = []
-    if OFF_STACK.search(g["title"]):
-        s -= 3
-        reasons.append("off-stack title")
-    if RED_FLAG.search(text):
-        s -= 4
-        reasons.append("red flag wording")
+# ---------- scoring (driven by scoring.json) ----------
+def wa_direct_on():
+    return (os.environ.get("WA_DIRECT") or "0").strip().lower() in ("1", "true", "yes", "on")
+
+
+def default_term_pattern(name):
+    parts = re.split(r"\s+", name.strip())
+    return r"\b" + r"\s+".join(re.escape(p) for p in parts) + r"\b"
+
+
+def load_scoring():
+    cfg = json.load(open(SCORING_PATH))
+    compiled = {}
+    for group in ("strong", "medium", "negative"):
+        terms = []
+        for name, weight in (cfg.get(group) or {}).items():
+            pat = (cfg.get("patterns") or {}).get(name) or default_term_pattern(name)
+            req = (cfg.get("require") or {}).get(name)
+            terms.append({
+                "name": name,
+                "weight": float(weight),
+                "re": re.compile(pat, re.I),
+                "require": re.compile(req, re.I) if req else None,
+            })
+        compiled[group] = terms
+    cfg["_compiled"] = compiled
+    return cfg
+
+
+def _usd_pair(g):
+    if g.get("_usd"):
+        return g["_usd"]
+    m = re.search(r"\$(\d+(?:\.\d+)?)\s*-\s*\$(\d+(?:\.\d+)?)", g.get("budget_usd") or "")
+    if m:
+        return float(m.group(1)), float(m.group(2))
+    return 0.0, 0.0
+
+
+def _field_mult(term, title, skills, desc, cfg, whole):
+    if term["require"] and not term["require"].search(whole):
+        return 0.0
+    if term["re"].search(title):
+        return float(cfg.get("title_multiplier", 1.6))
+    if term["re"].search(skills):
+        return float(cfg.get("skills_multiplier", 1.2))
+    if term["re"].search(desc):
+        return float(cfg.get("description_multiplier", 1.0))
+    return 0.0
+
+
+def keyword_score(g, cfg=None):
+    """Fit score 0-10 from scoring.json. Title hits weigh more than description."""
+    cfg = cfg or load_scoring()
+    title = g.get("title") or ""
+    skills = g.get("skills") or ""
+    desc = g.get("description") or ""
+    whole = f"{title} {skills} {desc}"
+    pos = 0.0
+    neg = 0.0
+    matched, flags = [], []
+    for term in cfg["_compiled"]["strong"] + cfg["_compiled"]["medium"]:
+        m = _field_mult(term, title, skills, desc, cfg, whole)
+        if m:
+            pos += term["weight"] * m
+            matched.append(term["name"])
+    pos = min(float(cfg.get("positive_cap", 7.5)), pos)
+    for term in cfg["_compiled"]["negative"]:
+        m = _field_mult(term, title, skills, desc, cfg, whole)
+        if m:
+            neg += term["weight"] * m
+            flags.append(term["name"])
+    s = pos + neg
+    bonuses = cfg.get("bonuses") or {}
+    bids = int(g.get("bids") or 0)
+    if 0 <= bids <= 5:
+        s += float(bonuses.get("bids_0_5", 0))
+        flags.append("low-bids")
+    if g.get("payment_verified") and g.get("deposit_made"):
+        s += float(bonuses.get("verified_deposit", 0))
+        flags.append("verified+deposit")
+    lo, hi = _usd_pair(g)
+    typ = g.get("type") or ""
+    if typ == "hourly" and hi >= float(bonuses.get("hourly_min_usd", 5)):
+        s += float(bonuses.get("budget_ok", 0))
+        flags.append("budget-ok")
+    elif typ == "fixed" and hi >= float(bonuses.get("fixed_min_usd", 30)):
+        s += float(bonuses.get("budget_ok", 0))
+        flags.append("budget-ok")
+    penalties = cfg.get("penalties") or {}
+    if OFF_STACK.search(title):
+        s -= float(penalties.get("off_stack_title", 3))
+        flags.append("off-stack title")
+    if RED_FLAG.search(whole):
+        s -= float(penalties.get("red_flag", 4))
+        flags.append("red flag wording")
     s = max(0.0, min(10.0, round(s, 1)))
-    matched = sorted({re.search(k, text, re.I).group(0).strip().lower() for k in hits})
-    reasons.insert(0, "matched: " + ", ".join(matched[:8]))
-    return {"fit_score": s, "worth_trying": s >= WORTH, "reason": "; ".join(reasons), "scorer": "keywords",
-            "matched": matched}
+    alert = float(cfg.get("fit_alert", 7))
+    reason_bits = ["matched: " + ", ".join(matched[:10])]
+    if flags:
+        reason_bits.append(", ".join(flags))
+    return {
+        "fit_score": s,
+        "worth_trying": s >= alert,
+        "reason": "; ".join(reason_bits),
+        "scorer": "keywords",
+        "matched": matched,
+        "fit_alert": alert,
+    }
+
+
+def notify_webhook(gigs, cfg):
+    """POST qualifying gigs to ROUTINE_WEBHOOK_URL. Never log the secret."""
+    if not gigs:
+        log(f"webhook: no gigs at or above fit_alert {cfg.get('fit_alert', 7)}")
+        return
+    url = (os.environ.get("ROUTINE_WEBHOOK_URL") or "").strip()
+    secret = (os.environ.get("ROUTINE_WEBHOOK_SECRET") or "").strip()
+    if not url:
+        log("webhook skipped: ROUTINE_WEBHOOK_URL unset")
+        return
+    if not secret:
+        log("webhook secret missing")
+        return
+    body = {"gigs": []}
+    for g in gigs:
+        desc = g.get("description") or ""
+        body["gigs"].append({
+            "title": g.get("title") or "",
+            "url": g.get("url") or "",
+            "budget": g.get("budget_usd") or g.get("budget") or "",
+            "bids": g.get("bids"),
+            "payment_verified": bool(g.get("payment_verified")),
+            "fit_score": g.get("fit_score"),
+            "matched": g.get("matched") or [],
+            "snippet": desc[:600],
+        })
+    try:
+        r = requests.post(
+            url,
+            json=body,
+            headers={"Authorization": f"Bearer {secret}", "Content-Type": "application/json"},
+            timeout=20,
+        )
+        log(f"webhook HTTP {r.status_code} ({len(body['gigs'])} gig(s))")
+    except Exception as e:
+        err = str(e)
+        if secret:
+            err = err.replace(secret, "[redacted]")
+        log(f"webhook failed: {err}")
 
 
 def openai_score(g):
@@ -325,13 +448,19 @@ def scan():
         time.sleep(1)
     log(f"freelancer.in API: {ok_queries}/{len(QUERIES)} queries ok, {len(cands)} unique projects since {int(since)}")
     passed, shortlisted, checked = [], [], 0
+    cfg = load_scoring()
+    alert = float(cfg.get("fit_alert", 7))
     ntfy = topic()
+    direct = wa_direct_on()
     wa_tok, wa_phone, wa_to = wa_creds()
-    if wa_tok and wa_phone and wa_to:
-        log("whatsapp alerts: configured")
+    if direct:
+        if wa_tok and wa_phone and wa_to:
+            log("whatsapp direct alerts: on (WA_DIRECT=1)")
+        else:
+            missing = [n for n, v in (("WHATSAPP_TOKEN", wa_tok), ("WA_PHONE_ID", wa_phone), ("WA_TO", wa_to)) if not v]
+            log(f"whatsapp direct alerts: on but not configured (missing {', '.join(missing) or 'unknown'})")
     else:
-        missing = [n for n, v in (("WHATSAPP_TOKEN", wa_tok), ("WA_PHONE_ID", wa_phone), ("WA_TO", wa_to)) if not v]
-        log(f"whatsapp alerts: not configured (missing {', '.join(missing) or 'unknown'})")
+        log("whatsapp direct alerts: off (WA_DIRECT=0)")
     for pid, p in sorted(cands.items(), key=lambda kv: -kv[1]["time_submitted"]):
         if str(pid) in seen or p.get("time_submitted", 0) < since or p.get("status") != "active":
             continue
@@ -366,8 +495,9 @@ def scan():
              "found_at": now_ist().strftime("%Y-%m-%d %H:%M"), "payment_verified": True,
              "deposit_made": ci["deposit"], "client_rating": ci["rating"], "client_reviews": ci["reviews"],
              "client_country": ci["country"], "skills": skills, "description": desc}
-        sc = openai_score(g) or keyword_score(g)
-        g.update({k: sc[k] for k in ("fit_score", "worth_trying", "reason", "scorer")})
+        sc = keyword_score(g, cfg)
+        g.update({k: sc[k] for k in ("fit_score", "worth_trying", "reason", "scorer", "matched")})
+        log(f"fit {g['fit_score']}/10 {g['title']!r} matched={g['matched']}")
         passed.append(g)
         if sc["worth_trying"]:
             bid = draft_bid(g, sc)
@@ -398,7 +528,7 @@ def scan():
         body = (f"Fit {g['fit_score']}/10 | {g['budget_usd']} ({g['budget']}) | {g['bids']} bids | payment verified"
                 f"{' + deposit' if g['deposit_made'] else ''} | {g['client_country']} {g['client_rating']}★ "
                 f"({g['client_reviews']} reviews) | posted {g['posted_ist']} IST\n{g['reason']}")
-        if ntfy:
+        if direct and ntfy:
             try:
                 requests.post(f"https://ntfy.sh/{ntfy}", data=body.encode("utf-8"), timeout=20,
                     headers={"Title": ("Freelancer: " + g["title"])[:200].encode("latin-1", "ignore").decode("latin-1"),
@@ -406,16 +536,19 @@ def scan():
                              "Priority": "high" if g["fit_score"] >= 8 else "default"})
             except Exception as e:
                 log(f"ntfy failed: {e}")
-        if wa_tok and wa_phone and wa_to:
+        if direct and wa_tok and wa_phone and wa_to:
             txt = f"\U0001F514 Freelancer gig\n{g['title']}\n{g['url']}\n{body}\n\nReply in Grok Bot chat: like / skip + why."
             res = send_whatsapp(txt)
             if not res["gig_delivered"]:
                 log(f"whatsapp did not deliver gig {g['id']} {g['title']!r} (kind={res['kind']} HTTP {res['status']})")
-        elif wa_tok:
+        elif direct and wa_tok:
             log("whatsapp skipped: WA_PHONE_ID or WA_TO not set")
-        time.sleep(0.5)
+        if direct:
+            time.sleep(0.5)
+    notify_webhook(shortlisted, cfg)
+    scores = ", ".join(f"{g['title'][:40]}={g['fit_score']}" for g in passed) or "none"
     log(f"scan done: {len(cands)} fetched, {checked} page-checked, {len(passed)} passed hard filters, "
-        f"{len(shortlisted)} shortlisted (scorer: {'openai' if os.environ.get('OPENAI_API_KEY') else 'keywords'})")
+        f"{len(shortlisted)} shortlisted (>= fit_alert {alert}), scores: {scores}")
     return passed, shortlisted
 
 
@@ -463,10 +596,42 @@ def loop():
         time.sleep(60)
 
 
+
+def calibrate():
+    """Score fixtures + shortlist.jsonl and print a table. Does not write state or send alerts."""
+    cfg = load_scoring()
+    alert = float(cfg.get("fit_alert", 7))
+    rows = []
+    rag = {
+        "title": "Build a RAG chatbot with LangChain in Python",
+        "description": "Need a production RAG chatbot using LangChain, Python, and a vector database. "
+                       "Should use embeddings and OpenAI or Azure OpenAI.",
+        "skills": "Python, LangChain, LLM, Chatbot, RAG",
+        "type": "fixed", "_usd": (200, 500), "bids": 2,
+        "payment_verified": True, "deposit_made": True,
+        "client_reviews": 0, "client_rating": 0,
+    }
+    rows.append(("FIXTURE", rag))
+    if os.path.exists(SHORTLIST):
+        for line in open(SHORTLIST):
+            line = line.strip()
+            if line:
+                g = json.loads(line)
+                rows.append(("shortlist", g))
+    print(f"fit_alert={alert}")
+    print(f"{'score':>5}  {'alert':<5}  {'src':<10}  title  reason")
+    for src, g in rows:
+        sc = keyword_score(g, cfg)
+        flag = "YES" if sc["worth_trying"] else "no"
+        print(f"{sc['fit_score']:5}  {flag:<5}  {src:<10}  {g.get('title','')[:70]}  | {sc['reason']}")
+
+
 if __name__ == "__main__":
     args = set(sys.argv[1:])
     if "--wa-test" in args or "wa-test" in args:
         wa_test()
+    elif "--calibrate" in args or "calibrate" in args:
+        calibrate()
     elif "--loop" in args or "loop" in args:
         loop()
     else:

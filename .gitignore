@@ -13,4 +13,5 @@ scanner.pid
 loop.out
 fit_profile.md
 feedback.md
+feedback.jsonl
 reviewed_urls.txt

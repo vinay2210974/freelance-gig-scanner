@@ -72,10 +72,12 @@ jobs:
           WA_PHONE_ID: ${{ secrets.WA_PHONE_ID }}
           WA_TO: ${{ secrets.WA_TO }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          WA_DIRECT: "0"
+          ROUTINE_WEBHOOK_URL: ${{ secrets.ROUTINE_WEBHOOK_URL }}
+          ROUTINE_WEBHOOK_SECRET: ${{ secrets.ROUTINE_WEBHOOK_SECRET }}
           MAX_BIDS: "16"
           MIN_HOURLY: "5"
           MIN_FIXED: "0"
-          WORTH: "0"
           SCAN_TIMEOUT_SEC: "420"
           TZ: Asia/Kolkata
         run: |
