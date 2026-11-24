@@ -1,2 +1,14 @@
 2026-11-24 16:36:43 IST freelancer.in API: 19/19 queries ok, 9 unique projects since 1795517704
 2026-11-24 16:36:51 IST scan done: 9 fetched, 4 page-checked, 1 passed hard filters, 1 shortlisted (scorer: keywords)
+2026-11-24 19:30:30 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSRDAwQTU2MTYwOUMwMkYxNjdBAA=="}]}
+2026-11-24 19:30:30 IST whatsapp test delivered as plain text
+2026-11-24 19:30:52 IST freelancer.in API: 19/19 queries ok, 70 unique projects since 1795518080
+2026-11-24 19:30:52 IST whatsapp alerts: configured
+2026-11-24 19:31:20 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSOUIwQ0E3OEExNDY2QTI1OTQ4AA=="}]}
+2026-11-24 19:31:21 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSN0M0NTE5QjAzQzkzRUQ4MTEwAA=="}]}
+2026-11-24 19:31:22 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSMjMxN0I4RjczOUYxMjg4QTg0AA=="}]}
+2026-11-24 19:31:23 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSQzBGNkM4QTAzMTVGNEM5MkJGAA=="}]}
+2026-11-24 19:31:25 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSMUI1OUY4REEwQjgxRTQ2QTVGAA=="}]}
+2026-11-24 19:31:27 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSRURDQjdBMzIwOEY5RDcwNzMyAA=="}]}
+2026-11-24 19:31:28 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSMzk4NkI5Q0YyMTNEODlFMTU2AA=="}]}
+2026-11-24 19:31:28 IST scan done: 70 fetched, 16 page-checked, 7 passed hard filters, 7 shortlisted (scorer: keywords)
