@@ -2,9 +2,14 @@ name: Scan freelancer.in
 
 on:
   schedule:
-    # GitHub's minimum interval is every 5 minutes; jobs can start a few minutes late.
-    - cron: "*/5 * * * *"
+    # Backup restarter only. The job self-chains every ~5h40m; GitHub cron is unreliable.
+    - cron: "7 * * * *"
   workflow_dispatch:
+    inputs:
+      wa_test:
+        description: "Send one WhatsApp connectivity test to Vinay"
+        type: boolean
+        default: false
 
 concurrency:
   group: freelancer-scan
@@ -12,24 +17,56 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 355
+    env:
+      TZ: Asia/Kolkata
+      GH_TOKEN: ${{ github.token }}
     steps:
+      - name: Exit if another scan is already running
+        id: guard
+        run: |
+          set -euo pipefail
+          others=$(gh run list --repo "${{ github.repository }}" --workflow scan.yml --status in_progress --json databaseId --jq ".[].databaseId | select(. != ${{ github.run_id }})")
+          if [ -n "${others}" ]; then
+            echo "Another run already in progress: ${others}"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.guard.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
-      - name: Run one scan
+      - name: Optional WhatsApp test
+        if: steps.guard.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.wa_test == 'true'
+        env:
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WA_PHONE_ID: ${{ secrets.WA_PHONE_ID }}
+          WA_TO: ${{ secrets.WA_TO }}
+          TZ: Asia/Kolkata
+        run: |
+          python pipeline.py --wa-test || echo "WhatsApp test returned non-zero; continuing to scan loop"
+
+      - name: Scan loop
+        if: steps.guard.outputs.skip != 'true'
         env:
           WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
           WA_PHONE_ID: ${{ secrets.WA_PHONE_ID }}
@@ -41,29 +78,76 @@ jobs:
           WORTH: "0"
           SCAN_TIMEOUT_SEC: "420"
           TZ: Asia/Kolkata
-        run: python pipeline.py --once
-
-      - name: Commit state
-        shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in seen_ids.txt state.json shortlist.jsonl new_matches.csv scanner.log; do
-            [ -f "$f" ] && git add -- "$f"
+
+          commit_state() {
+            local f i
+            for f in seen_ids.txt state.json shortlist.jsonl new_matches.csv scanner.log; do
+              [ -f "$f" ] && git add -- "$f"
+            done
+            if git diff --cached --quiet; then
+              echo "No state changes"
+              return 0
+            fi
+            git commit -m "scan: update state [skip ci]"
+            for i in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin main; then
+                return 0
+              fi
+              echo "push failed, retry ${i}"
+              git rebase --abort 2>/dev/null || true
+              sleep $((i * 2))
+            done
+            echo "failed to push state after retries"
+            return 1
+          }
+
+          in_window() {
+            local hm
+            hm=$(date +%H%M)
+            hm=$((10#$hm))
+            [ "$hm" -ge 800 ] && [ "$hm" -le 2330 ]
+          }
+
+          START=$SECONDS
+          MAX=$((5 * 3600 + 40 * 60))
+          while [ $((SECONDS - START)) -lt $MAX ]; do
+            ITER=$SECONDS
+            if ! git pull --rebase origin main; then
+              echo "pull --rebase failed, aborting rebase and continuing with local tree"
+              git rebase --abort 2>/dev/null || true
+            fi
+            python pipeline.py --once || echo "scan failed (continuing loop)"
+            commit_state || echo "state commit failed (continuing loop)"
+            if in_window; then
+              INTERVAL=120
+            else
+              INTERVAL=600
+            fi
+            ELAPSED=$((SECONDS - ITER))
+            if [ "$ELAPSED" -lt "$INTERVAL" ]; then
+              SLEEP=$((INTERVAL - ELAPSED))
+              echo "sleeping ${SLEEP}s until next scan (interval ${INTERVAL}s)"
+              sleep "$SLEEP"
+            else
+              echo "scan+commit took ${ELAPSED}s (>= ${INTERVAL}s); starting next immediately"
+            fi
           done
-          if git diff --cached --quiet; then
-            echo "No state changes"
+          echo "loop finished after $((SECONDS - START))s"
+
+      - name: Dispatch next run
+        if: always() && steps.guard.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          others=$(gh run list --repo "${{ github.repository }}" --workflow scan.yml --json databaseId,status --jq "[.[] | select(.databaseId != ${{ github.run_id }} and (.status == \"in_progress\" or .status == \"queued\" or .status == \"waiting\" or .status == \"pending\"))] | .[].databaseId")
+          if [ -n "${others}" ]; then
+            echo "Not dispatching; another run already pending or running: ${others}"
             exit 0
           fi
-          git commit -m "scan: update state [skip ci]"
-          for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin main; then
-              exit 0
-            fi
-            echo "push failed, retry ${i}"
-            git rebase --abort 2>/dev/null || true
-            sleep $((i * 2))
-          done
-          echo "failed to push state after retries"
-          exit 1
+          gh workflow run scan.yml --repo "${{ github.repository }}" --ref "${{ github.ref_name }}"
+          echo "Dispatched next scan.yml run"

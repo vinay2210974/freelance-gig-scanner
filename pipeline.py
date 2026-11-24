@@ -8,9 +8,10 @@ gigs go to shortlist.jsonl + drafts/<id>.md (bid draft, not committed)
 + ntfy + WhatsApp. Every hard-filter pass is logged to new_matches.csv.
 NEVER submits bids.
 
-Usage: python pipeline.py --once | --loop
+Usage: python pipeline.py --once | --loop | --wa-test
   --once (default): one scan, skip if outside 08:00-23:30 Asia/Kolkata.
   --loop: box loop every SCAN_EVERY_MIN minutes inside the same window.
+  --wa-test: send one short WhatsApp connectivity test (same code path as alerts).
 """
 import csv, json, os, re, sys, time, datetime, random
 from zoneinfo import ZoneInfo
@@ -79,6 +80,92 @@ def trim_log(keep=500):
     if len(lines) > keep:
         with open(LOG, "w") as f:
             f.write("\n".join(lines[-keep:]) + "\n")
+
+
+
+def wa_creds():
+    tok = (os.environ.get("WHATSAPP_TOKEN") or "").strip()
+    phone = (os.environ.get("WA_PHONE_ID") or "").strip()
+    to = (os.environ.get("WA_TO") or "").strip()
+    return tok, phone, to
+
+
+def _wa_error_code(text):
+    try:
+        return (json.loads(text) or {}).get("error", {}).get("code")
+    except Exception:
+        return None
+
+
+def _wa_post(kind, payload, tok, phone):
+    r = requests.post(
+        f"https://graph.facebook.com/v21.0/{phone}/messages",
+        headers={"Authorization": f"Bearer {tok}"},
+        timeout=20,
+        json=payload,
+    )
+    body = r.text or ""
+    if tok:
+        body = body.replace(tok, "[redacted]")
+    log(f"whatsapp {kind} HTTP {r.status_code}: {body[:800]}")
+    return r, body
+
+
+def send_whatsapp(text):
+    """Send a plain-text WhatsApp message.
+
+    On error 131047 (24h session window closed), automatically fall back to the
+    approved 'hello' template (language 'en'). Logs HTTP status and response
+    body (token redacted) on every attempt.
+
+    Returns dict with keys: ok, status, body, kind ('text'|'template'|'skipped'|'error'),
+    and gig_delivered (True only if the plain-text message itself was accepted).
+    """
+    tok, phone, to = wa_creds()
+    missing = [n for n, v in (("WHATSAPP_TOKEN", tok), ("WA_PHONE_ID", phone), ("WA_TO", to)) if not v]
+    if missing:
+        log(f"whatsapp skipped: missing {', '.join(missing)}")
+        return {"ok": False, "status": 0, "body": "missing " + ", ".join(missing),
+                "kind": "skipped", "gig_delivered": False}
+    try:
+        r, body = _wa_post("text", {
+            "messaging_product": "whatsapp",
+            "to": to,
+            "type": "text",
+            "text": {"body": (text or "")[:4000]},
+        }, tok, phone)
+    except Exception as e:
+        log(f"whatsapp text failed: {e}")
+        return {"ok": False, "status": 0, "body": str(e), "kind": "error", "gig_delivered": False}
+    if r.status_code < 300:
+        return {"ok": True, "status": r.status_code, "body": body, "kind": "text", "gig_delivered": True}
+    if _wa_error_code(r.text) == 131047 or "131047" in (r.text or ""):
+        log("whatsapp 24h window closed (131047); falling back to template hello/en")
+        try:
+            r2, body2 = _wa_post("template hello/en", {
+                "messaging_product": "whatsapp",
+                "to": to,
+                "type": "template",
+                "template": {"name": "hello", "language": {"code": "en"}},
+            }, tok, phone)
+        except Exception as e:
+            log(f"whatsapp template failed: {e}")
+            return {"ok": False, "status": 0, "body": str(e), "kind": "error", "gig_delivered": False}
+        return {"ok": r2.status_code < 300, "status": r2.status_code, "body": body2,
+                "kind": "template", "gig_delivered": False}
+    return {"ok": False, "status": r.status_code, "body": body, "kind": "text", "gig_delivered": False}
+
+
+def wa_test():
+    res = send_whatsapp("Gig scanner test from GitHub Actions \u2705")
+    if res["ok"] and res["kind"] == "text":
+        log("whatsapp test delivered as plain text")
+        return
+    if res["ok"] and res["kind"] == "template":
+        log("whatsapp test: 24h window closed; hello template sent. Vinay must reply 'hi' to reopen alerts.")
+        return
+    log(f"whatsapp test did not succeed (kind={res['kind']} HTTP {res['status']})")
+    raise SystemExit(1)
 
 
 def jload(path, default):
@@ -239,9 +326,12 @@ def scan():
     log(f"freelancer.in API: {ok_queries}/{len(QUERIES)} queries ok, {len(cands)} unique projects since {int(since)}")
     passed, shortlisted, checked = [], [], 0
     ntfy = topic()
-    wa_tok = (os.environ.get("WHATSAPP_TOKEN") or "").strip()
-    wa_phone = (os.environ.get("WA_PHONE_ID") or "").strip()
-    wa_to = (os.environ.get("WA_TO") or "").strip()
+    wa_tok, wa_phone, wa_to = wa_creds()
+    if wa_tok and wa_phone and wa_to:
+        log("whatsapp alerts: configured")
+    else:
+        missing = [n for n, v in (("WHATSAPP_TOKEN", wa_tok), ("WA_PHONE_ID", wa_phone), ("WA_TO", wa_to)) if not v]
+        log(f"whatsapp alerts: not configured (missing {', '.join(missing) or 'unknown'})")
     for pid, p in sorted(cands.items(), key=lambda kv: -kv[1]["time_submitted"]):
         if str(pid) in seen or p.get("time_submitted", 0) < since or p.get("status") != "active":
             continue
@@ -317,16 +407,10 @@ def scan():
             except Exception as e:
                 log(f"ntfy failed: {e}")
         if wa_tok and wa_phone and wa_to:
-            try:
-                txt = f"\U0001F514 Freelancer gig\n{g['title']}\n{g['url']}\n{body}\n\nReply in Grok Bot chat: like / skip + why."
-                r = requests.post(f"https://graph.facebook.com/v21.0/{wa_phone}/messages",
-                    headers={"Authorization": f"Bearer {wa_tok}"}, timeout=20,
-                    json={"messaging_product": "whatsapp", "to": wa_to,
-                          "type": "text", "text": {"body": txt[:4000]}})
-                if r.status_code >= 300:
-                    log(f"whatsapp failed {r.status_code}: {r.text[:200]}")
-            except Exception as e:
-                log(f"whatsapp failed: {e}")
+            txt = f"\U0001F514 Freelancer gig\n{g['title']}\n{g['url']}\n{body}\n\nReply in Grok Bot chat: like / skip + why."
+            res = send_whatsapp(txt)
+            if not res["gig_delivered"]:
+                log(f"whatsapp did not deliver gig {g['id']} {g['title']!r} (kind={res['kind']} HTTP {res['status']})")
         elif wa_tok:
             log("whatsapp skipped: WA_PHONE_ID or WA_TO not set")
         time.sleep(0.5)
@@ -381,7 +465,9 @@ def loop():
 
 if __name__ == "__main__":
     args = set(sys.argv[1:])
-    if "--loop" in args or "loop" in args:
+    if "--wa-test" in args or "wa-test" in args:
+        wa_test()
+    elif "--loop" in args or "loop" in args:
         loop()
     else:
         try:
