@@ -220,3 +220,7 @@
 2026-11-24 21:16:26 IST fit 1.8/10 'Premium Electronics Packaging Design' matched=['website', 'ai']
 2026-11-24 21:16:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 21:16:26 IST scan done: 8 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Premium Electronics Packaging Design=1.8
+2026-11-24 21:18:24 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795534858
+2026-11-24 21:18:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 21:18:24 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 21:18:24 IST scan done: 6 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
