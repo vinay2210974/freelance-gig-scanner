@@ -472,3 +472,8 @@
 2026-11-24 23:10:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 23:10:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 23:10:26 IST scan done: 3 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-24 23:12:24 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795541699
+2026-11-24 23:12:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 23:12:27 IST fit 0.0/10 'D2C Growth Manager for India' matched=[]
+2026-11-24 23:12:27 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 23:12:27 IST scan done: 6 fetched, 2 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: D2C Growth Manager for India=0.0
