@@ -1,6 +1,3 @@
-2026-11-24 16:36:43 IST freelancer.in API: 19/19 queries ok, 9 unique projects since 1795517704
-2026-11-24 16:36:51 IST scan done: 9 fetched, 4 page-checked, 1 passed hard filters, 1 shortlisted (scorer: keywords)
-2026-11-24 19:30:30 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSRDAwQTU2MTYwOUMwMkYxNjdBAA=="}]}
 2026-11-24 19:30:30 IST whatsapp test delivered as plain text
 2026-11-24 19:30:52 IST freelancer.in API: 19/19 queries ok, 70 unique projects since 1795518080
 2026-11-24 19:30:52 IST whatsapp alerts: configured
@@ -497,3 +494,7 @@
 2026-11-24 23:22:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 23:22:24 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 23:22:24 IST scan done: 1 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-24 23:24:24 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795542418
+2026-11-24 23:24:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 23:24:26 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 23:24:26 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
