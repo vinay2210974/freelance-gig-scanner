@@ -27,7 +27,7 @@
     "ai agent": 2.4,
     "chatbot": 2.0,
     "voice agent": 2.2,
-    "ai calling": 2.2,
+    "ai calling": 2.4,
     "whatsapp bot": 2.2,
     "n8n": 2.0,
     "fastapi": 1.8,
@@ -40,7 +40,8 @@
     "embeddings": 1.8,
     "automation workflow": 1.8,
     "dashboard": 1.2,
-    "streamlit": 1.4
+    "streamlit": 1.4,
+    "ai lead gen": 2.2
   },
   "medium": {
     "api integration": 1.2,
@@ -89,7 +90,7 @@
     "ai agent": "\\bai\\s+agents?\\b|\\bagentic\\b|\\btool calling\\b",
     "chatbot": "\\bchat\\s*bots?\\b",
     "voice agent": "\\bvoice\\s+(?:agents?|assistants?|bots?)\\b|\\bvoice\\s+ai\\b",
-    "ai calling": "\\bai\\s+calling\\b|\\bvoice\\s+ai\\s+call",
+    "ai calling": "\\bai\\s+(?:voice\\s+)?call(?:ing|er|s)?\\b|\\bvoice\\s+ai\\s+call|\\b(?:vapi|retell|bland\\.ai|elevenlabs)\\b|\\bai\\s+(?:cold\\s+)?caller\\b|\\boutbound\\s+(?:ai|voice)\\b",
     "whatsapp bot": "\\bwhatsapp\\s+(?:bots?|automation|agents?)\\b",
     "n8n": "\\bn8n\\b",
     "fastapi": "\\bfastapi\\b",
@@ -133,9 +134,17 @@
     "trading": "\\btrading\\b|\\bforex\\b|\\barbitrage\\b|\\bstock market\\b|\\bfutures\\b|\\balgorithmic trading\\b",
     "course": "\\bcourses?\\b",
     "joomla": "\\bjoomla\\b",
-    "php": "\\bphp\\b"
+    "php": "\\bphp\\b",
+    "ai lead gen": "\\b(?:ai|automated|automation)\\b[^.]{0,40}\\blead\\s*gen(?:eration)?\\b|\\blead\\s*gen(?:eration)?\\b[^.]{0,40}\\b(?:ai|automation|automated|bot|scrap\\w*)\\b|\\bappointment\\s+setting\\s+(?:bot|ai|automation)\\b"
   },
   "require": {
     "react+ai": "\\bai\\b"
+  },
+  "unless": {
+    "calling": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "telecaller": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "sales": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "support": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "marketing": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b"
   }
 }

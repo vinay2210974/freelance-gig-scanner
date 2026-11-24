@@ -34,7 +34,7 @@ SCORING_PATH = os.path.join(BASE, "scoring.json")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 API = "https://www.freelancer.in/api/projects/0.1/projects/active/"
 SITE = "https://www.freelancer.in/projects/"
-QUERIES = ['ai', 'llm', 'chatbot', 'automation', 'agent', 'voice', 'speech', 'data', 'intelligence', 'workflow', 'python', 'n8n', 'chatgpt', 'api', 'whatsapp', 'email', 'website', 'webapp', 'app']
+QUERIES = ['ai', 'llm', 'chatbot', 'automation', 'agent', 'voice', 'speech', 'data', 'intelligence', 'workflow', 'python', 'n8n', 'chatgpt', 'api', 'whatsapp', 'email', 'website', 'webapp', 'app', "lead generation", "ai calling", "voice agent"]
 MAX_BIDS = int(os.environ.get("MAX_BIDS", "16"))
 MIN_HOURLY = float(os.environ.get("MIN_HOURLY", "5"))
 MIN_FIXED = float(os.environ.get("MIN_FIXED", "0"))
@@ -43,7 +43,7 @@ LOOKBACK_FIRST = 3 * 3600
 SCAN_TIMEOUT_SEC = int(os.environ.get("SCAN_TIMEOUT_SEC", "420"))
 
 CORE_RE = re.compile(r"\b(ai|llms?|chat ?bots?|automations?|agents?|voice|speech|data|intelligence|workflows?|python|n8n|chat ?gpt|apis?|whatsapp|e-?mails?|websites?|web ?apps?|apps?)\b", re.I)
-SKIP_TITLE = re.compile(r"\b(cold call|telecallers?|tele-callers?|telecalling|caller|appointment setter|sales rep|lead generation|linkedin expert|site verification|video|course|graphic design|it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
+SKIP_TITLE = re.compile(r"\b(linkedin expert|site verification|video|course|graphic design|it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
     r"thesis|dissertation|virtual assistant|arbitrage|algorithmic trading)\b", re.I)
 RED_FLAG = re.compile(r"telegram|contact (me )?on whatsapp|unpaid|free (trial|test)|test task without pay|commission only|"
     r"pay (a )?(fee|deposit)|equity only", re.I)
@@ -225,6 +225,7 @@ def load_scoring():
                 "weight": float(weight),
                 "re": re.compile(pat, re.I),
                 "require": re.compile(req, re.I) if req else None,
+                "unless": re.compile((cfg.get("unless") or {})[name], re.I) if (cfg.get("unless") or {}).get(name) else None,
             })
         compiled[group] = terms
     cfg["_compiled"] = compiled
@@ -242,6 +243,8 @@ def _usd_pair(g):
 
 def _field_mult(term, title, skills, desc, cfg, whole):
     if term["require"] and not term["require"].search(whole):
+        return 0.0
+    if term.get("unless") and term["unless"].search(whole):
         return 0.0
     if term["re"].search(title):
         return float(cfg.get("title_multiplier", 1.6))
