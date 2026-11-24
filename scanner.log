@@ -374,3 +374,7 @@
 2026-11-24 22:22:26 IST fit 1.2/10 'Amazon SDS for Alcohol Room Sprays' matched=[]
 2026-11-24 22:22:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 22:22:26 IST scan done: 5 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Amazon SDS for Alcohol Room Sprays=1.2
+2026-11-24 22:24:24 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795538819
+2026-11-24 22:24:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 22:24:24 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 22:24:24 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
