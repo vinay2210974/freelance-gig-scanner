@@ -12,3 +12,6 @@
 2026-11-24 19:31:27 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSRURDQjdBMzIwOEY5RDcwNzMyAA=="}]}
 2026-11-24 19:31:28 IST whatsapp text HTTP 200: {"messaging_product":"whatsapp","contacts":[{"input":"919640221097","wa_id":"919640221097"}],"messages":[{"id":"wamid.HBgMOTE5NjQwMjIxMDk3FQIAERgSMzk4NkI5Q0YyMTNEODlFMTU2AA=="}]}
 2026-11-24 19:31:28 IST scan done: 70 fetched, 16 page-checked, 7 passed hard filters, 7 shortlisted (scorer: keywords)
+2026-11-24 19:32:51 IST freelancer.in API: 19/19 queries ok, 3 unique projects since 1795528530
+2026-11-24 19:32:51 IST whatsapp alerts: configured
+2026-11-24 19:32:51 IST scan done: 3 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (scorer: keywords)
