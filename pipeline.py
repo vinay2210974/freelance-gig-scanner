@@ -43,8 +43,7 @@ LOOKBACK_FIRST = 3 * 3600
 SCAN_TIMEOUT_SEC = int(os.environ.get("SCAN_TIMEOUT_SEC", "420"))
 
 CORE_RE = re.compile(r"\b(ai|llms?|chat ?bots?|automations?|agents?|voice|speech|data|intelligence|workflows?|python|n8n|chat ?gpt|apis?|whatsapp|e-?mails?|websites?|web ?apps?|apps?)\b", re.I)
-SKIP_TITLE = re.compile(r"\b(linkedin expert|site verification|video|course|graphic design|it support|technical support|tech support|help ?desk|support specialist|desktop support|customer support|trading|trader|forex|crypto trading|stock market|options trading|wordpress|logo|video edit|data entry|tiktok|followers|essay|assignment|homework|"
-    r"thesis|dissertation|virtual assistant|arbitrage|algorithmic trading)\b", re.I)
+SKIP_TITLE = re.compile(r"\b(wordpress|woocommerce|elementor|php|laravel|codeigniter|joomla|drupal|magento|wix|squarespace|webflow|flutter|react native|swift|swiftui|kotlin|xamarin|unity|unreal|game dev\w*|c#|\.net|asp\.net|vb\.net|ruby on rails|solidity|smart contracts?|nft|blockchain|logo|tiktok|followers|essay|assignment|homework|thesis|dissertation|trading|trader|forex|crypto trading|stock market|options trading|arbitrage|algorithmic trading|autocad|solidworks|3d model\w*)\b", re.I)
 RED_FLAG = re.compile(r"telegram|contact (me )?on whatsapp|unpaid|free (trial|test)|test task without pay|commission only|"
     r"pay (a )?(fee|deposit)|equity only", re.I)
 OFF_STACK = re.compile(r"\b(flutter|react native|swift|kotlin|unity|php|laravel|wordpress|shopify|\.net|c#)\b", re.I)

@@ -145,6 +145,11 @@
     "telecaller": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
     "sales": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
     "support": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
-    "marketing": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b"
+    "marketing": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "design": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "video": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "course": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "data entry": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b",
+    "seo": "\\b(ai|a\\.i\\.|bots?|voice\\s*ai|voice\\s*agents?|automat\\w*|llms?|gpt|chatgpt|openai|vapi|retell|bland|twilio|elevenlabs|n8n|make\\.com|zapier|agents?|python|api|crm)\\b"
   }
 }
