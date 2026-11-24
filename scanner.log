@@ -304,3 +304,7 @@
 2026-11-24 21:52:27 IST fit 3.8/10 'HMO SaaS Automation Implementation' matched=['automation workflow', 'dashboard', 'api', 'automation', 'ai', 'whatsapp']
 2026-11-24 21:52:27 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 21:52:27 IST scan done: 3 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: HMO SaaS Automation Implementation=3.8
+2026-11-24 21:54:25 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795537019
+2026-11-24 21:54:25 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-24 21:54:25 IST webhook: pending empty (fit_alert 4.0)
+2026-11-24 21:54:25 IST scan done: 3 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
