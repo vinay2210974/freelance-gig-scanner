@@ -1,7 +1,3 @@
-2026-11-24 21:38:24 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795536059
-2026-11-24 21:38:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 21:38:25 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 21:38:25 IST scan done: 6 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-24 21:40:24 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795536178
 2026-11-24 21:40:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 21:40:29 IST fit 8.7/10 'AI Chatbot testing - Native Malay' matched=['gpt', 'chatbot', 'python', 'automation', 'ai', 'ai integration']
@@ -498,3 +494,7 @@
 2026-11-25 09:34:49 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 09:34:51 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 09:34:51 IST scan done: 2 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 09:36:49 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795579162
+2026-11-25 09:36:49 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 09:36:51 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 09:36:51 IST scan done: 2 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
