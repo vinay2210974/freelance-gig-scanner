@@ -1,7 +1,3 @@
-2026-11-25 17:23:02 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 17:23:02 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 17:25:00 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795607254
-2026-11-25 17:25:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 17:25:02 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 17:25:02 IST scan done: 2 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 17:27:00 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795607375
@@ -498,3 +494,7 @@
 2026-11-25 21:23:23 IST fit 0.7/10 'Long-Term Virtual Operations Assistant' matched=[]
 2026-11-25 21:23:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 21:23:26 IST scan done: 111 fetched, 7 page-checked, 4 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Real-World Human Activity Videos from La=2.0, Real-World Human Activity Videos from th=2.0, Real-World Human Activity Videos from In=2.0, Long-Term Virtual Operations Assistant=0.7
+2026-11-25 21:25:14 IST freelancer.in API: 22/22 queries ok, 110 unique projects since 1795611289
+2026-11-25 21:25:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 21:25:19 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 21:25:19 IST scan done: 110 fetched, 3 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
