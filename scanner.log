@@ -1,4 +1,3 @@
-2026-11-24 19:54:52 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 7.0), scores: none
 2026-11-24 19:56:51 IST freelancer.in API: 19/19 queries ok, 6 unique projects since 1795529971
 2026-11-24 19:56:51 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 19:56:53 IST fit 1.1/10 ' ESP32 Startup & W5500 problem fix  (EasyEDA Pro)' matched=['gpt']
@@ -498,3 +497,4 @@
 2026-11-25 05:02:12 IST outside scan window (now 2026-11-25 05:02 IST), skipping
 2026-11-25 05:12:12 IST outside scan window (now 2026-11-25 05:12 IST), skipping
 2026-11-25 05:22:13 IST outside scan window (now 2026-11-25 05:22 IST), skipping
+2026-11-25 05:32:12 IST outside scan window (now 2026-11-25 05:32 IST), skipping
