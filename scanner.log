@@ -1,7 +1,3 @@
-2026-11-25 12:00:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 12:00:54 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 12:00:54 IST scan done: 6 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 12:02:47 IST freelancer.in API: 22/22 queries ok, 10 unique projects since 1795587922
 2026-11-25 12:02:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 12:02:50 IST fit 0.0/10 'Shopify Storefront Launch Support' matched=['website']
 2026-11-25 12:02:53 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-25 16:01:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 16:01:03 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 16:01:03 IST scan done: 4 fetched, 2 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 16:03:00 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795602334
+2026-11-25 16:03:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 16:03:02 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 16:03:02 IST scan done: 6 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
