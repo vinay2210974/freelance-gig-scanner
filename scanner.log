@@ -1,7 +1,3 @@
-2026-11-24 22:54:25 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795540618
-2026-11-24 22:54:25 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 22:54:26 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 22:54:26 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-24 22:56:24 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795540739
 2026-11-24 22:56:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 22:56:26 IST fit 0.0/10 'Experienced Freelancers Needed for Short Academic Survey (15–20 min, €15) -- 3' matched=['openai', 'website']
@@ -498,3 +494,7 @@
 2026-11-25 10:52:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 10:52:47 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 10:52:47 IST scan done: 0 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 10:54:47 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795583842
+2026-11-25 10:54:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 10:54:49 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 10:54:49 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
