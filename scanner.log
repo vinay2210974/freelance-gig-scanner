@@ -1,7 +1,3 @@
-2026-11-24 21:48:25 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795536659
-2026-11-24 21:48:25 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 21:48:26 IST fit 8.7/10 'AI-Driven Agency Lead Outreach' matched=['chatbot', 'voice agent', 'n8n', 'automation workflow', 'ai lead gen', 'website', 'scraping', 'automation', 'ai']
-2026-11-24 21:48:26 IST pending: added 1, queue 1
 2026-11-24 21:48:26 IST webhook: flushing 1 (queue had 1)
 2026-11-24 21:48:27 IST webhook HTTP 200 (1 gig(s))
 2026-11-24 21:48:27 IST webhook flushed 1, 0 still pending
@@ -498,3 +494,7 @@
 2026-11-25 09:46:50 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 09:46:50 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 09:46:50 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 09:48:49 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795579882
+2026-11-25 09:48:49 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 09:48:51 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 09:48:51 IST scan done: 3 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
