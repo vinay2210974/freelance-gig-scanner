@@ -1,11 +1,3 @@
-2026-11-25 13:05:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 13:05:00 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 13:05:00 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 13:07:00 IST freelancer.in API: 22/22 queries ok, 5 unique projects since 1795591774
-2026-11-25 13:07:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 13:07:02 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 13:07:02 IST scan done: 5 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 13:09:00 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795591894
 2026-11-25 13:09:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 13:09:02 IST fit 1.7/10 'Business Research & Presentation Design ' matched=['ai']
 2026-11-25 13:09:02 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +490,11 @@
 2026-11-25 17:07:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 17:07:00 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 17:07:00 IST scan done: 6 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 17:09:00 IST freelancer.in API: 22/22 queries ok, 7 unique projects since 1795606294
+2026-11-25 17:09:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 17:09:02 IST fit 5.9/10 'Tally API Integration for Invoice, E-Invoice & E-Way Bill Data' matched=['python', 'api integration', 'api']
+2026-11-25 17:09:02 IST pending: added 1, queue 1
+2026-11-25 17:09:02 IST webhook: flushing 1 (queue had 1)
+2026-11-25 17:09:02 IST webhook HTTP 200 (1 gig(s))
+2026-11-25 17:09:02 IST webhook flushed 1, 0 still pending
+2026-11-25 17:09:02 IST scan done: 7 fetched, 1 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: Tally API Integration for Invoice, E-Inv=5.9
