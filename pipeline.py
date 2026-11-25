@@ -542,6 +542,9 @@ def scan():
     st = jload(STATE, {})
     now = time.time()
     since = st.get("last_run", now - LOOKBACK_FIRST) - 300
+    # freelancer search indexes projects late (often 10-60+ min after time_submitted),
+    # so query a wide window; seen_ids + MAX_BIDS keep it from re-alerting.
+    since = min(since, now - int(os.environ.get("INDEX_LAG_WINDOW", "10800")))
     seen = set(open(SEEN).read().split()) if os.path.exists(SEEN) else set()
     cands = {}
     ok_queries = 0
@@ -589,9 +592,12 @@ def scan():
         checked += 1
         ci = client_info(p["seo_url"])
         time.sleep(1.5)
-        seen.add(str(pid))
         if not ci or not ci["pv"]:
+            # clients often verify payment shortly after posting; retry for 3h
+            if now - p.get("time_submitted", 0) > 10800:
+                seen.add(str(pid))
             continue
+        seen.add(str(pid))
         cur = p["currency"]["code"]
         b = p.get("budget") or {}
         unit = "/hr" if p.get("type") == "hourly" else " fixed"
