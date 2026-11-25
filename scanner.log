@@ -1,7 +1,3 @@
-2026-11-25 10:42:48 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795583123
-2026-11-25 10:42:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 10:42:50 IST fit 0.0/10 'Site Verification in Guilin, Guangxi, China' matched=[]
-2026-11-25 10:42:50 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 10:42:50 IST scan done: 4 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Site Verification in Guilin, Guangxi, Ch=0.0
 2026-11-25 10:44:48 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795583243
 2026-11-25 10:44:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-25 14:41:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 14:41:02 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 14:41:02 IST scan done: 4 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 14:43:00 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795597535
+2026-11-25 14:43:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 14:43:02 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 14:43:02 IST scan done: 6 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
