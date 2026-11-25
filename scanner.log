@@ -1,7 +1,3 @@
-2026-11-25 09:00:48 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795577003
-2026-11-25 09:00:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 09:00:48 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 09:00:48 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 09:02:49 IST freelancer.in API: 22/22 queries ok, 0 unique projects since 1795577123
 2026-11-25 09:02:49 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 09:02:49 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-25 12:54:50 IST webhook HTTP 200 (1 gig(s))
 2026-11-25 12:54:50 IST webhook flushed 1, 0 still pending
 2026-11-25 12:54:50 IST scan done: 9 fetched, 1 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: Document Sourcing – Aragonese (AI Traini=4.6
+2026-11-25 12:56:47 IST freelancer.in API: 22/22 queries ok, 7 unique projects since 1795591162
+2026-11-25 12:56:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 12:56:48 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 12:56:48 IST scan done: 7 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
