@@ -1,11 +1,3 @@
-2026-11-25 15:59:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 15:59:00 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 15:59:00 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 16:01:00 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795602214
-2026-11-25 16:01:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 16:01:03 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 16:01:03 IST scan done: 4 fetched, 2 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 16:03:00 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795602334
 2026-11-25 16:03:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 16:03:02 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 16:03:02 IST scan done: 6 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
@@ -498,3 +490,11 @@
 2026-11-25 20:01:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 20:01:14 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 20:01:14 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 20:03:14 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795616748
+2026-11-25 20:03:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 20:03:17 IST fit 7.8/10 'AI Language Learning Platform Development' matched=['chatbot', 'automation workflow', 'automation', 'ai', 'ai integration']
+2026-11-25 20:03:17 IST pending: added 1, queue 1
+2026-11-25 20:03:17 IST webhook: flushing 1 (queue had 1)
+2026-11-25 20:03:18 IST webhook HTTP 200 (1 gig(s))
+2026-11-25 20:03:18 IST webhook flushed 1, 0 still pending
+2026-11-25 20:03:18 IST scan done: 4 fetched, 2 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: AI Language Learning Platform Developmen=7.8
