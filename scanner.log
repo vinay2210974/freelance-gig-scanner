@@ -1,11 +1,3 @@
-2026-11-25 17:19:00 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 17:19:00 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 17:21:00 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795607014
-2026-11-25 17:21:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 17:21:00 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 17:21:00 IST scan done: 1 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 17:23:00 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795607134
-2026-11-25 17:23:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 17:23:02 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 17:23:02 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 17:25:00 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795607254
@@ -498,3 +490,11 @@
 2026-11-25 21:21:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 21:21:18 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 21:21:18 IST scan done: 110 fetched, 3 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 21:23:15 IST freelancer.in API: 22/22 queries ok, 111 unique projects since 1795611169
+2026-11-25 21:23:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 21:23:17 IST fit 2.0/10 'Real-World Human Activity Videos from Latin America for AI Training (Existing or New Footage)' matched=['ai']
+2026-11-25 21:23:20 IST fit 2.0/10 'Real-World Human Activity Videos from the Philippines for AI Training (Existing or New Footage)' matched=['ai']
+2026-11-25 21:23:22 IST fit 2.0/10 'Real-World Human Activity Videos from India for AI Training (Existing Footage or New Recording)' matched=['ai']
+2026-11-25 21:23:23 IST fit 0.7/10 'Long-Term Virtual Operations Assistant' matched=[]
+2026-11-25 21:23:26 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 21:23:26 IST scan done: 111 fetched, 7 page-checked, 4 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Real-World Human Activity Videos from La=2.0, Real-World Human Activity Videos from th=2.0, Real-World Human Activity Videos from In=2.0, Long-Term Virtual Operations Assistant=0.7
