@@ -1,4 +1,3 @@
-2026-11-25 19:43:14 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 19:45:14 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795615668
 2026-11-25 19:45:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 19:45:14 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +497,4 @@
 2026-11-26 02:01:02 IST outside scan window (now 2026-11-26 02:01 IST), skipping
 2026-11-26 02:11:02 IST outside scan window (now 2026-11-26 02:11 IST), skipping
 2026-11-26 02:21:03 IST outside scan window (now 2026-11-26 02:21 IST), skipping
+2026-11-26 02:31:02 IST outside scan window (now 2026-11-26 02:31 IST), skipping
