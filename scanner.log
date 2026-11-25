@@ -1,17 +1,3 @@
-2026-11-24 20:02:24 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795530299
-2026-11-24 20:02:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 20:02:24 IST webhook: no gigs at or above fit_alert 4
-2026-11-24 20:02:24 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-24 20:04:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795530419
-2026-11-24 20:04:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 20:04:27 IST fit 0.0/10 'Complete SEO Optimization for Investoor' matched=['website']
-2026-11-24 20:04:27 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 20:04:27 IST scan done: 3 fetched, 2 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Complete SEO Optimization for Investoor=0.0
-2026-11-24 20:06:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795530539
-2026-11-24 20:06:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 20:06:24 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 20:06:24 IST scan done: 3 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-24 20:08:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795530658
 2026-11-24 20:08:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 20:08:24 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 20:08:24 IST scan done: 3 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
@@ -498,3 +484,17 @@
 2026-11-25 07:32:22 IST outside scan window (now 2026-11-25 07:32 IST), skipping
 2026-11-25 07:42:22 IST outside scan window (now 2026-11-25 07:42 IST), skipping
 2026-11-25 07:52:22 IST outside scan window (now 2026-11-25 07:52 IST), skipping
+2026-11-25 08:02:49 IST freelancer.in API: 22/22 queries ok, 122 unique projects since 1795542899
+2026-11-25 08:02:49 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 08:02:57 IST fit 0.0/10 'Cinematic Fashion Reel Editing' matched=[]
+2026-11-25 08:03:07 IST fit 0.3/10 'Long-Term Client Acquisition Partner' matched=[]
+2026-11-25 08:03:08 IST fit 0.0/10 'Freelancer.com Sales Closer Needed' matched=['website']
+2026-11-25 08:03:10 IST fit 0.0/10 'Boost Reseller Panel User Base' matched=['dashboard']
+2026-11-25 08:03:12 IST fit 0.0/10 'Greek Smartphone Voice Recording Participants' matched=[]
+2026-11-25 08:03:19 IST fit 0.0/10 'International B2B Sales Partner Needed' matched=[]
+2026-11-25 08:03:24 IST fit 4.2/10 'B2B Sales & Business Development Partners – Web Scraping & Data Intelligence' matched=['api', 'website', 'scraping', 'automation']
+2026-11-25 08:03:24 IST pending: added 1, queue 1
+2026-11-25 08:03:24 IST webhook: flushing 1 (queue had 1)
+2026-11-25 08:03:24 IST webhook HTTP 200 (1 gig(s))
+2026-11-25 08:03:24 IST webhook flushed 1, 0 still pending
+2026-11-25 08:03:24 IST scan done: 122 fetched, 20 page-checked, 7 passed hard filters, 1 shortlisted (>= fit_alert 4.0), scores: Cinematic Fashion Reel Editing=0.0, Long-Term Client Acquisition Partner=0.3, Freelancer.com Sales Closer Needed=0.0, Boost Reseller Panel User Base=0.0, Greek Smartphone Voice Recording Partici=0.0, International B2B Sales Partner Needed=0.0, B2B Sales & Business Development Partner=4.2
