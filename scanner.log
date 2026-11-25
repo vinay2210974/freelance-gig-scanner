@@ -1,7 +1,3 @@
-2026-11-24 21:32:25 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 21:32:26 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 21:32:26 IST scan done: 7 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-24 21:34:24 IST freelancer.in API: 22/22 queries ok, 7 unique projects since 1795535818
 2026-11-24 21:34:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 21:34:26 IST fit 0.0/10 'Gerber Files from Excel Design' matched=[]
 2026-11-24 21:34:26 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-25 09:28:51 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 09:28:53 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 09:28:53 IST scan done: 1 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 09:30:51 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795578803
+2026-11-25 09:30:51 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 09:30:51 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 09:30:51 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
