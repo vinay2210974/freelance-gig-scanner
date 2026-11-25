@@ -1,7 +1,3 @@
-2026-11-25 09:56:47 IST scan done: 1 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 09:58:48 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795580482
-2026-11-25 09:58:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 09:58:52 IST fit 8.7/10 'Open-Source AI Funnel Automation' matched=['llm', 'ai agent', 'chatbot', 'python', 'nlp', 'vector db', 'dashboard', 'api', 'website', 'automation', 'ai', 'ai integration', 'whatsapp']
 2026-11-25 09:58:52 IST pending: added 1, queue 1
 2026-11-25 09:58:52 IST webhook: flushing 1 (queue had 1)
 2026-11-25 09:58:52 IST webhook HTTP 200 (1 gig(s))
@@ -498,3 +494,7 @@
 2026-11-25 13:51:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 13:51:00 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 13:51:00 IST scan done: 0 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 13:53:01 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795594534
+2026-11-25 13:53:01 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 13:53:01 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 13:53:01 IST scan done: 3 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
