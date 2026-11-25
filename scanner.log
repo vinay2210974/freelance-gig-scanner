@@ -1,7 +1,3 @@
-2026-11-25 08:03:08 IST fit 0.0/10 'Freelancer.com Sales Closer Needed' matched=['website']
-2026-11-25 08:03:10 IST fit 0.0/10 'Boost Reseller Panel User Base' matched=['dashboard']
-2026-11-25 08:03:12 IST fit 0.0/10 'Greek Smartphone Voice Recording Participants' matched=[]
-2026-11-25 08:03:19 IST fit 0.0/10 'International B2B Sales Partner Needed' matched=[]
 2026-11-25 08:03:24 IST fit 4.2/10 'B2B Sales & Business Development Partners – Web Scraping & Data Intelligence' matched=['api', 'website', 'scraping', 'automation']
 2026-11-25 08:03:24 IST pending: added 1, queue 1
 2026-11-25 08:03:24 IST webhook: flushing 1 (queue had 1)
@@ -498,3 +494,7 @@
 2026-11-25 11:56:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 11:56:48 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 11:56:48 IST scan done: 6 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 11:58:48 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795587683
+2026-11-25 11:58:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 11:58:48 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 11:58:48 IST scan done: 6 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
