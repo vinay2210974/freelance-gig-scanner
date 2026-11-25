@@ -1,7 +1,3 @@
-2026-11-25 19:03:14 IST freelancer.in API: 22/22 queries ok, 6 unique projects since 1795613148
-2026-11-25 19:03:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 19:03:14 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 19:03:14 IST scan done: 6 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 19:05:13 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795613268
 2026-11-25 19:05:13 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 19:05:13 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-25 22:59:16 IST fit 0.0/10 'Indeed & Canada Job Bank Job Posting and Applicant Generation Specialist' matched=[]
 2026-11-25 22:59:29 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 22:59:29 IST scan done: 97 fetched, 9 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Indeed & Canada Job Bank Job Posting and=0.0
+2026-11-25 23:01:15 IST freelancer.in API: 22/22 queries ok, 97 unique projects since 1795617049
+2026-11-25 23:01:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 23:01:30 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 23:01:30 IST scan done: 97 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
