@@ -1,7 +1,3 @@
-2026-11-25 18:57:14 IST scan done: 7 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 18:59:13 IST freelancer.in API: 22/22 queries ok, 7 unique projects since 1795612908
-2026-11-25 18:59:13 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 18:59:13 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 18:59:13 IST scan done: 7 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 19:01:13 IST freelancer.in API: 22/22 queries ok, 5 unique projects since 1795613028
 2026-11-25 19:01:13 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-25 22:55:17 IST fit 0.0/10 'Oracle SBC Migration Proposal Specialist' matched=[]
 2026-11-25 22:55:28 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 22:55:28 IST scan done: 96 fetched, 8 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Oracle SBC Migration Proposal Specialist=0.0
+2026-11-25 22:57:14 IST freelancer.in API: 22/22 queries ok, 97 unique projects since 1795616808
+2026-11-25 22:57:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 22:57:27 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 22:57:27 IST scan done: 97 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
