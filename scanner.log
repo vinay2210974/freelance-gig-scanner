@@ -1,7 +1,3 @@
-2026-11-25 14:43:02 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 14:43:02 IST scan done: 6 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 14:45:00 IST freelancer.in API: 22/22 queries ok, 9 unique projects since 1795597654
-2026-11-25 14:45:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 14:45:02 IST fit 1.5/10 'Cinematic Realistic AI Short Film - 9 to 10 Minutes' matched=['ai']
 2026-11-25 14:45:04 IST fit 0.0/10 'Recover Data From Unreadable SSD' matched=[]
 2026-11-25 14:45:04 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-25 18:45:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 18:45:16 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 18:45:16 IST scan done: 7 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 18:47:15 IST freelancer.in API: 22/22 queries ok, 5 unique projects since 1795612188
+2026-11-25 18:47:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 18:47:15 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 18:47:15 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
