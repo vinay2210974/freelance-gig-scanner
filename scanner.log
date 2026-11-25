@@ -1,7 +1,3 @@
-2026-11-25 14:49:00 IST freelancer.in API: 22/22 queries ok, 14 unique projects since 1795597894
-2026-11-25 14:49:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 14:49:02 IST fit 0.0/10 'Bangladeshi VA' matched=[]
-2026-11-25 14:49:04 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 14:49:04 IST scan done: 14 fetched, 2 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Bangladeshi VA=0.0
 2026-11-25 14:51:01 IST freelancer.in API: 22/22 queries ok, 10 unique projects since 1795598015
 2026-11-25 14:51:01 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-25 18:51:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 18:51:15 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 18:51:15 IST scan done: 5 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 18:53:14 IST freelancer.in API: 22/22 queries ok, 5 unique projects since 1795612549
+2026-11-25 18:53:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 18:53:16 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 18:53:16 IST scan done: 5 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
