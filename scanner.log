@@ -1,7 +1,3 @@
-2026-11-25 18:33:00 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 18:33:00 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 18:35:00 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795611454
-2026-11-25 18:35:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 18:35:00 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 18:35:00 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 18:37:00 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795611575
@@ -498,3 +494,7 @@
 2026-11-25 22:31:17 IST fit 0.0/10 'Targeted Lead Generation for Ambient Music Production Services' matched=['website']
 2026-11-25 22:31:24 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 22:31:24 IST scan done: 103 fetched, 6 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Malaysia Pallet Wrapper Supplier Researc=1.2, Targeted Lead Generation for Ambient Mus=0.0
+2026-11-25 22:33:15 IST freelancer.in API: 22/22 queries ok, 99 unique projects since 1795615369
+2026-11-25 22:33:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 22:33:20 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 22:33:20 IST scan done: 99 fetched, 3 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
