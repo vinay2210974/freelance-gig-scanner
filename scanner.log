@@ -1,7 +1,3 @@
-2026-11-24 23:08:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795541459
-2026-11-24 23:08:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 23:08:26 IST fit 2.0/10 'Desbloquear iPhone 17 Pro Max -- 2' matched=['api']
-2026-11-24 23:08:26 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 23:08:26 IST scan done: 3 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Desbloquear iPhone 17 Pro Max -- 2=2.0
 2026-11-24 23:10:24 IST freelancer.in API: 22/22 queries ok, 3 unique projects since 1795541578
 2026-11-24 23:10:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-25 11:06:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 11:06:47 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 11:06:47 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 11:08:46 IST freelancer.in API: 22/22 queries ok, 2 unique projects since 1795584682
+2026-11-25 11:08:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 11:08:48 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 11:08:48 IST scan done: 2 fetched, 1 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
