@@ -1,8 +1,3 @@
-2026-11-24 22:34:24 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795539418
-2026-11-24 22:34:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-24 22:34:24 IST webhook: pending empty (fit_alert 4.0)
-2026-11-24 22:34:24 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-24 22:36:24 IST freelancer.in API: 22/22 queries ok, 4 unique projects since 1795539538
 2026-11-24 22:36:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-24 22:36:24 IST webhook: pending empty (fit_alert 4.0)
 2026-11-24 22:36:24 IST scan done: 4 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
@@ -498,3 +493,8 @@
 2026-11-25 10:34:48 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 10:34:48 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 10:34:48 IST scan done: 2 fetched, 0 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-25 10:36:47 IST freelancer.in API: 22/22 queries ok, 1 unique projects since 1795582763
+2026-11-25 10:36:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-25 10:36:50 IST fit 3.7/10 'WhatsApp <> Meta API Integration' matched=['api integration', 'api', 'whatsapp']
+2026-11-25 10:36:50 IST webhook: pending empty (fit_alert 4.0)
+2026-11-25 10:36:50 IST scan done: 1 fetched, 1 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: WhatsApp <> Meta API Integration=3.7
