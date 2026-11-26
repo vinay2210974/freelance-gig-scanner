@@ -1,7 +1,3 @@
-2026-11-26 14:17:57 IST fit 0.0/10 'Site Verification in  Lancashire, United Kingdom' matched=[]
-2026-11-26 14:18:16 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 14:18:16 IST scan done: 90 fetched, 14 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Site Verification in  Lancashire, United=0.0
-2026-11-26 14:19:54 IST freelancer.in API: 22/22 queries ok, 89 unique projects since 1795672169
 2026-11-26 14:19:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 14:20:14 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 14:20:14 IST scan done: 89 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-26 18:16:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 18:16:21 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 18:16:21 IST scan done: 63 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 18:18:07 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795686461
+2026-11-26 18:18:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 18:18:24 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 18:18:24 IST scan done: 62 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
