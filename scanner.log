@@ -1,9 +1,3 @@
-2026-11-26 12:20:08 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 12:20:08 IST scan done: 72 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-26 12:21:53 IST freelancer.in API: 22/22 queries ok, 72 unique projects since 1795665088
-2026-11-26 12:21:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 12:22:09 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 12:22:09 IST scan done: 72 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-26 12:23:53 IST freelancer.in API: 22/22 queries ok, 72 unique projects since 1795665208
 2026-11-26 12:23:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 12:24:09 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +492,9 @@
 2026-11-26 16:15:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 16:16:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 16:16:16 IST scan done: 78 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 16:17:53 IST freelancer.in API: 22/22 queries ok, 81 unique projects since 1795679248
+2026-11-26 16:17:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 16:17:56 IST fit 0.3/10 'iPhone 17 App Tester Needed - Must Own Physical iPhone 17 (Real Device Testing)' matched=[]
+2026-11-26 16:17:58 IST fit 0.0/10 'Remote Website Sales Lead Generator' matched=['website', 'whatsapp']
+2026-11-26 16:18:16 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 16:18:16 IST scan done: 81 fetched, 15 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: iPhone 17 App Tester Needed - Must Own P=0.3, Remote Website Sales Lead Generator=0.0
