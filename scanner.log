@@ -1,7 +1,3 @@
-2026-11-25 23:25:27 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 23:25:27 IST scan done: 95 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 23:27:14 IST freelancer.in API: 22/22 queries ok, 97 unique projects since 1795618609
-2026-11-25 23:27:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 23:27:29 IST webhook: pending empty (fit_alert 4.0)
 2026-11-25 23:27:29 IST scan done: 97 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 23:29:15 IST freelancer.in API: 22/22 queries ok, 98 unique projects since 1795618729
@@ -498,3 +494,7 @@
 2026-11-26 11:29:50 IST fit 1.2/10 'South Africa Education Verification' matched=[]
 2026-11-26 11:30:04 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 11:30:04 IST scan done: 66 fetched, 13 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: South Africa Education Verification=1.2
+2026-11-26 11:31:43 IST freelancer.in API: 22/22 queries ok, 67 unique projects since 1795662077
+2026-11-26 11:31:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 11:32:04 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 11:32:04 IST scan done: 67 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
