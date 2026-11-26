@@ -1,7 +1,3 @@
-2026-11-26 13:46:17 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 13:46:17 IST scan done: 91 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: International law and trade and environm=1.2
-2026-11-26 13:47:54 IST freelancer.in API: 22/22 queries ok, 92 unique projects since 1795670249
-2026-11-26 13:47:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 13:47:55 IST fit 2.4/10 'Publishable Banking Risk Research' matched=['python']
 2026-11-26 13:48:17 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 13:48:17 IST scan done: 92 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Publishable Banking Risk Research=2.4
@@ -498,3 +494,7 @@
 2026-11-26 17:44:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 17:44:23 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 17:44:23 IST scan done: 65 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 17:46:07 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795684541
+2026-11-26 17:46:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 17:46:21 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 17:46:21 IST scan done: 61 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
