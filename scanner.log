@@ -1,7 +1,3 @@
-2026-11-26 10:45:43 IST freelancer.in API: 22/22 queries ok, 49 unique projects since 1795659318
-2026-11-26 10:45:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 10:45:54 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 10:45:54 IST scan done: 49 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-26 10:47:44 IST freelancer.in API: 22/22 queries ok, 49 unique projects since 1795659438
 2026-11-26 10:47:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 10:47:55 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-26 14:39:54 IST fit 3.9/10 'Digital Marketing Agency for AI SaaS Product – Hiring Genie' matched=['dashboard', 'website', 'automation', 'ai']
 2026-11-26 14:40:13 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 14:40:13 IST scan done: 80 fetched, 13 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Digital Marketing Agency for AI SaaS Pro=3.9
+2026-11-26 14:41:54 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795673489
+2026-11-26 14:41:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 14:42:13 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 14:42:13 IST scan done: 80 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
