@@ -1,7 +1,3 @@
-2026-11-26 17:32:06 IST freelancer.in API: 22/22 queries ok, 70 unique projects since 1795683700
-2026-11-26 17:32:06 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 17:32:25 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 17:32:25 IST scan done: 70 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-26 17:34:06 IST freelancer.in API: 22/22 queries ok, 69 unique projects since 1795683821
 2026-11-26 17:34:06 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 17:34:23 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +494,7 @@
 2026-11-26 21:28:11 IST fit 1.2/10 'Help of accountant needed to set up payroll in Ireland' matched=[]
 2026-11-26 21:28:27 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 21:28:27 IST scan done: 71 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Help of accountant needed to set up payr=1.2
+2026-11-26 21:30:08 IST freelancer.in API: 22/22 queries ok, 73 unique projects since 1795697981
+2026-11-26 21:30:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 21:30:28 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 21:30:28 IST scan done: 73 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
