@@ -1,7 +1,3 @@
-2026-11-26 13:11:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 13:12:12 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 13:12:12 IST scan done: 85 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-26 13:13:53 IST freelancer.in API: 22/22 queries ok, 88 unique projects since 1795668208
 2026-11-26 13:13:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 13:13:55 IST fit 0.0/10 'Commissioned Remote Medical Parts Sales' matched=[]
 2026-11-26 13:14:17 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-26 17:05:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 17:06:12 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 17:06:12 IST scan done: 74 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 17:07:54 IST freelancer.in API: 22/22 queries ok, 71 unique projects since 1795682249
+2026-11-26 17:07:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 17:08:11 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 17:08:11 IST scan done: 71 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
