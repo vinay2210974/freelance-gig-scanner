@@ -1,7 +1,3 @@
-2026-11-26 15:18:17 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 15:18:17 IST scan done: 86 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Trauma Care Analytics Dashboard=2.6
-2026-11-26 15:19:53 IST freelancer.in API: 22/22 queries ok, 86 unique projects since 1795675768
-2026-11-26 15:19:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 15:20:16 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 15:20:16 IST scan done: 86 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-26 15:21:53 IST freelancer.in API: 22/22 queries ok, 85 unique projects since 1795675888
@@ -498,3 +494,7 @@
 2026-11-26 19:18:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 19:18:23 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 19:18:23 IST scan done: 56 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 19:20:07 IST freelancer.in API: 22/22 queries ok, 56 unique projects since 1795690181
+2026-11-26 19:20:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 19:20:21 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 19:20:21 IST scan done: 56 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
