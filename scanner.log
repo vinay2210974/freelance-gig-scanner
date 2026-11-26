@@ -1,7 +1,3 @@
-2026-11-26 10:05:52 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 10:05:52 IST scan done: 58 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-26 10:07:43 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795657037
-2026-11-26 10:07:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 10:07:45 IST fit 0.0/10 'Promote Education Site in Large Groups of whatsapp and telegram and other groups of students' matched=['whatsapp']
 2026-11-26 10:07:51 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 10:07:51 IST scan done: 59 fetched, 5 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Promote Education Site in Large Groups o=0.0
@@ -498,3 +494,7 @@
 2026-11-26 14:01:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 14:02:15 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 14:02:15 IST scan done: 87 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-26 14:03:53 IST freelancer.in API: 22/22 queries ok, 85 unique projects since 1795671209
+2026-11-26 14:03:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 14:04:14 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 14:04:14 IST scan done: 85 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
