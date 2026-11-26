@@ -42,6 +42,7 @@ API = "https://www.freelancer.in/api/projects/0.1/projects/active/"
 SITE = "https://www.freelancer.in/projects/"
 QUERIES = ['ai', 'llm', 'chatbot', 'automation', 'agent', 'voice', 'speech', 'data', 'intelligence', 'workflow', 'python', 'n8n', 'chatgpt', 'api', 'whatsapp', 'email', 'website', 'webapp', 'app', "lead generation", "ai calling", "voice agent"]
 MAX_BIDS = int(os.environ.get("MAX_BIDS", "16"))
+LIVE_MAX_BIDS = int(os.environ.get("LIVE_MAX_BIDS", "15"))
 MIN_HOURLY = float(os.environ.get("MIN_HOURLY", "5"))
 MIN_FIXED = float(os.environ.get("MIN_FIXED", "0"))
 WORTH = float(os.environ.get("WORTH", "0"))
@@ -443,6 +444,31 @@ def maybe_flush_webhook(cfg, st, now=None):
     if elapsed < gap:
         remain_min = max(0, int((gap - elapsed + 59) // 60))
         log(f"webhook: holding {len(pending)} pending, {int(gap // 60)}m gap, next in ~{remain_min} min")
+        return st
+    # live recheck: drop gigs that already passed the bid limit or closed,
+    # so the routine (which costs Grok Bot usage) only wakes for biddable gigs
+    live = []
+    for g in pending:
+        seo = _norm_url(g.get("url")).split("/projects/")[-1]
+        try:
+            r = requests.get("https://www.freelancer.com/api/projects/0.1/projects/",
+                             params={"seo_urls[]": seo}, timeout=20)
+            ps = list((r.json().get("result") or {}).get("projects") or [])
+            p = ps[0] if ps else None
+        except Exception:
+            p = None
+        if p is not None:
+            n = (p.get("bid_stats") or {}).get("bid_count") or 0
+            if n > LIVE_MAX_BIDS or p.get("status") != "active":
+                log(f"webhook: drop {seo} live bids {n} status {p.get('status')}")
+                continue
+            g["bids"] = n
+        live.append(g)
+    if len(live) != len(pending):
+        save_pending(live)
+    pending = live
+    if not pending:
+        log("webhook: nothing biddable after live recheck")
         return st
     pending_sorted = sorted(
         pending,
