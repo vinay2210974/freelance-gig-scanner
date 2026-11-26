@@ -1,11 +1,3 @@
-2026-11-26 15:55:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 15:56:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 15:56:12 IST scan done: 83 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-26 15:57:53 IST freelancer.in API: 22/22 queries ok, 82 unique projects since 1795678049
-2026-11-26 15:57:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 15:58:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 15:58:12 IST scan done: 82 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-26 15:59:53 IST freelancer.in API: 22/22 queries ok, 85 unique projects since 1795678168
 2026-11-26 15:59:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 16:00:10 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 16:00:10 IST scan done: 85 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +490,11 @@
 2026-11-26 19:56:58 IST fit 1.2/10 'Test iOS App on iPhone 17' matched=[]
 2026-11-26 19:57:10 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 19:57:10 IST scan done: 54 fetched, 9 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Test iOS App on iPhone 17=1.2
+2026-11-26 19:58:08 IST freelancer.in API: 22/22 queries ok, 58 unique projects since 1795692461
+2026-11-26 19:58:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 19:58:11 IST fit 6.3/10 'QA Automation Engineer / SDET: Test Plan and Automated Suite for an AI Email-Processing API - 26/11/2026 09:27 EST' matched=['python', 'api', 'automation', 'ai']
+2026-11-26 19:58:24 IST pending: added 1, queue 1
+2026-11-26 19:58:24 IST webhook: flushing 1 (queue had 1)
+2026-11-26 19:58:25 IST webhook HTTP 200 (1 gig(s))
+2026-11-26 19:58:25 IST webhook flushed 1, 0 still pending
+2026-11-26 19:58:25 IST scan done: 58 fetched, 10 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 5.0), scores: QA Automation Engineer / SDET: Test Plan=6.3
