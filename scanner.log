@@ -1,8 +1,3 @@
-2026-11-25 21:59:19 IST scan done: 105 fetched, 3 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 22:01:14 IST freelancer.in API: 22/22 queries ok, 103 unique projects since 1795613448
-2026-11-25 22:01:14 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 22:01:17 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 22:01:17 IST scan done: 103 fetched, 2 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 22:03:15 IST freelancer.in API: 22/22 queries ok, 107 unique projects since 1795613568
 2026-11-25 22:03:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 22:03:18 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +493,8 @@
 2026-11-26 10:01:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 10:01:49 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 10:01:49 IST scan done: 53 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-26 10:03:44 IST freelancer.in API: 22/22 queries ok, 56 unique projects since 1795656798
+2026-11-26 10:03:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 10:03:47 IST fit 1.4/10 'Academic Notes Contributors needed -- 3' matched=['ai']
+2026-11-26 10:03:54 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 10:03:54 IST scan done: 56 fetched, 6 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Academic Notes Contributors needed -- 3=1.4
