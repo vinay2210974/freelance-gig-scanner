@@ -1,7 +1,3 @@
-2026-11-26 15:45:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 15:45:54 IST fit 0.0/10 'Daily Tech App Review Blogs' matched=['website']
-2026-11-26 15:46:15 IST webhook: pending empty (fit_alert 4.0)
-2026-11-26 15:46:15 IST scan done: 86 fetched, 14 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Daily Tech App Review Blogs=0.0
 2026-11-26 15:47:53 IST freelancer.in API: 22/22 queries ok, 86 unique projects since 1795677448
 2026-11-26 15:47:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 15:48:15 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-26 19:46:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 19:46:24 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 19:46:24 IST scan done: 51 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 19:48:07 IST freelancer.in API: 22/22 queries ok, 52 unique projects since 1795691861
+2026-11-26 19:48:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 19:48:23 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 19:48:23 IST scan done: 52 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
