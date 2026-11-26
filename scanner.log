@@ -1,7 +1,3 @@
-2026-11-25 23:31:29 IST scan done: 97 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
-2026-11-25 23:40:48 IST outside scan window (now 2026-11-25 23:40 IST), skipping
-2026-11-25 23:50:48 IST outside scan window (now 2026-11-25 23:50 IST), skipping
-2026-11-26 00:00:48 IST outside scan window (now 2026-11-26 00:00 IST), skipping
 2026-11-26 00:10:49 IST outside scan window (now 2026-11-26 00:10 IST), skipping
 2026-11-26 00:20:49 IST outside scan window (now 2026-11-26 00:20 IST), skipping
 2026-11-26 00:31:02 IST outside scan window (now 2026-11-26 00:31 IST), skipping
@@ -498,3 +494,7 @@
 2026-11-26 11:35:45 IST fit 2.1/10 'Social Media Manager for B2B Paper & Stationery Manufacturer (LinkedIn, Facebook, Instagram)' matched=['website', 'ai']
 2026-11-26 11:36:03 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 11:36:03 IST scan done: 67 fetched, 13 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Social Media Manager for B2B Paper & Sta=2.1
+2026-11-26 11:37:43 IST freelancer.in API: 22/22 queries ok, 67 unique projects since 1795662437
+2026-11-26 11:37:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 11:38:02 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 11:38:02 IST scan done: 67 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
