@@ -1,7 +1,3 @@
-2026-11-26 17:56:06 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 17:56:08 IST fit 0.2/10 'Digital Agency Account Manager' matched=['website', 'whatsapp']
-2026-11-26 17:56:21 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 17:56:21 IST scan done: 66 fetched, 9 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Digital Agency Account Manager=0.2
 2026-11-26 17:58:07 IST freelancer.in API: 22/22 queries ok, 65 unique projects since 1795685260
 2026-11-26 17:58:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 17:58:19 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +494,7 @@
 2026-11-26 21:52:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 21:52:24 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 21:52:24 IST scan done: 79 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 21:54:08 IST freelancer.in API: 22/22 queries ok, 77 unique projects since 1795699421
+2026-11-26 21:54:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 21:54:23 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 21:54:23 IST scan done: 77 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
