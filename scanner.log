@@ -1,8 +1,3 @@
-2026-11-26 15:53:53 IST freelancer.in API: 22/22 queries ok, 83 unique projects since 1795677808
-2026-11-26 15:53:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 15:54:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 15:54:12 IST scan done: 83 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-26 15:55:53 IST freelancer.in API: 22/22 queries ok, 83 unique projects since 1795677928
 2026-11-26 15:55:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 15:56:12 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 15:56:12 IST scan done: 83 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +493,8 @@
 2026-11-26 19:54:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 19:54:21 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 19:54:21 IST scan done: 52 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-26 19:56:56 IST freelancer.in API: 22/22 queries ok, 54 unique projects since 1795692342
+2026-11-26 19:56:56 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 19:56:58 IST fit 1.2/10 'Test iOS App on iPhone 17' matched=[]
+2026-11-26 19:57:10 IST webhook: pending empty (fit_alert 5.0)
+2026-11-26 19:57:10 IST scan done: 54 fetched, 9 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Test iOS App on iPhone 17=1.2
