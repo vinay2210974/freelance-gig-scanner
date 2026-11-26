@@ -1,7 +1,3 @@
-2026-11-25 22:35:15 IST freelancer.in API: 22/22 queries ok, 98 unique projects since 1795615488
-2026-11-25 22:35:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-25 22:35:21 IST webhook: pending empty (fit_alert 4.0)
-2026-11-25 22:35:21 IST scan done: 98 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
 2026-11-25 22:37:15 IST freelancer.in API: 22/22 queries ok, 94 unique projects since 1795615609
 2026-11-25 22:37:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-25 22:37:20 IST webhook: pending empty (fit_alert 4.0)
@@ -498,3 +494,7 @@
 2026-11-26 10:37:45 IST fit 0.0/10 'Compact Golf Ball Tracking System' matched=[]
 2026-11-26 10:37:54 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 10:37:54 IST scan done: 53 fetched, 7 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: Compact Golf Ball Tracking System=0.0
+2026-11-26 10:39:43 IST freelancer.in API: 22/22 queries ok, 50 unique projects since 1795658957
+2026-11-26 10:39:43 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 10:39:53 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 10:39:53 IST scan done: 50 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
