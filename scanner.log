@@ -1,7 +1,3 @@
-2026-11-26 11:05:44 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795660517
-2026-11-26 11:05:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 11:05:47 IST fit 0.0/10 'German Employment Verification Needed' matched=['prompt engineering']
-2026-11-26 11:06:00 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 11:06:00 IST scan done: 59 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: German Employment Verification Needed=0.0
 2026-11-26 11:07:44 IST freelancer.in API: 22/22 queries ok, 58 unique projects since 1795660638
 2026-11-26 11:07:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-26 14:57:53 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 14:58:15 IST webhook: pending empty (fit_alert 4.0)
 2026-11-26 14:58:15 IST scan done: 85 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
+2026-11-26 14:59:54 IST freelancer.in API: 22/22 queries ok, 87 unique projects since 1795674569
+2026-11-26 14:59:54 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-26 15:00:16 IST webhook: pending empty (fit_alert 4.0)
+2026-11-26 15:00:16 IST scan done: 87 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 4.0), scores: none
