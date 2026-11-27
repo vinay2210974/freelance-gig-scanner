@@ -1,8 +1,3 @@
-2026-11-27 18:19:15 IST scan done: 64 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 18:20:59 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795773033
-2026-11-27 18:20:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 18:21:18 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 18:21:18 IST scan done: 61 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 18:22:59 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795773152
 2026-11-27 18:22:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 18:23:16 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +493,8 @@
 2026-11-27 22:21:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 22:21:17 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 22:21:17 IST scan done: 60 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 22:23:08 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795787563
+2026-11-27 22:23:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 22:23:09 IST fit 0.0/10 'Pre-Employment Verification in Germany ' matched=[]
+2026-11-27 22:23:19 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 22:23:19 IST scan done: 61 fetched, 7 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Pre-Employment Verification in Germany =0.0
