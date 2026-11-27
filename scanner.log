@@ -1,7 +1,3 @@
-2026-11-27 14:50:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 14:51:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 14:51:12 IST scan done: 80 fetched, 16 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 14:52:46 IST freelancer.in API: 22/22 queries ok, 83 unique projects since 1795760539
 2026-11-27 14:52:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 14:52:48 IST fit 0.0/10 'Play Store ASO for Loan App' matched=[]
 2026-11-27 14:53:14 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +494,7 @@
 2026-11-27 18:48:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 18:49:18 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 18:49:18 IST scan done: 62 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 18:50:59 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795774833
+2026-11-27 18:50:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 18:51:17 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 18:51:17 IST scan done: 62 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
