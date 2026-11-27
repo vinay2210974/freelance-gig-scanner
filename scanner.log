@@ -1,7 +1,3 @@
-2026-11-27 09:50:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 09:50:43 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 09:50:43 IST scan done: 39 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 09:52:31 IST freelancer.in API: 22/22 queries ok, 40 unique projects since 1795742526
 2026-11-27 09:52:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 09:52:44 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 09:52:44 IST scan done: 40 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-27 13:52:49 IST fit 0.0/10 'CAD Software Assembly Test' matched=[]
 2026-11-27 13:53:15 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 13:53:15 IST scan done: 80 fetched, 18 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: CAD Software Assembly Test=0.0
+2026-11-27 13:54:46 IST freelancer.in API: 22/22 queries ok, 79 unique projects since 1795757059
+2026-11-27 13:54:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 13:55:13 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 13:55:13 IST scan done: 79 fetched, 17 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
