@@ -1,7 +1,3 @@
-2026-11-26 22:04:09 IST freelancer.in API: 22/22 queries ok, 78 unique projects since 1795700022
-2026-11-26 22:04:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 22:04:11 IST fit 0.0/10 'Real-World Activity Video Recording Project – Individuals & Businesses Wanted -- 2' matched=[]
-2026-11-26 22:04:25 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 22:04:25 IST scan done: 78 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Real-World Activity Video Recording Proj=0.0
 2026-11-26 22:06:08 IST freelancer.in API: 22/22 queries ok, 78 unique projects since 1795700141
 2026-11-26 22:06:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-27 10:06:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 10:06:43 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 10:06:43 IST scan done: 43 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 10:08:31 IST freelancer.in API: 22/22 queries ok, 43 unique projects since 1795743486
+2026-11-27 10:08:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 10:08:42 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 10:08:42 IST scan done: 43 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
