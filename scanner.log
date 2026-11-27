@@ -1,7 +1,3 @@
-2026-11-27 08:14:42 IST scan done: 39 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 08:16:32 IST freelancer.in API: 22/22 queries ok, 39 unique projects since 1795736767
-2026-11-27 08:16:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 08:16:42 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 08:16:42 IST scan done: 39 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 08:18:32 IST freelancer.in API: 22/22 queries ok, 38 unique projects since 1795736886
 2026-11-27 08:18:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-27 12:18:50 IST fit 0.8/10 'Full-Time Executive Assistant Needed' matched=['ai']
 2026-11-27 12:19:13 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 12:19:13 IST scan done: 65 fetched, 16 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Custom Voice Processing Preset=0.0, Full-Time Executive Assistant Needed=0.8
+2026-11-27 12:20:46 IST freelancer.in API: 22/22 queries ok, 66 unique projects since 1795751419
+2026-11-27 12:20:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 12:21:08 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 12:21:08 IST scan done: 66 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
