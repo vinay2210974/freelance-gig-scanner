@@ -1,7 +1,3 @@
-2026-11-27 16:33:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 16:33:12 IST scan done: 79 fetched, 8 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Influencer Outreach - Christmas Season=0.0
-2026-11-27 16:34:58 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795766673
-2026-11-27 16:34:58 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 16:35:11 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 16:35:11 IST scan done: 80 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 16:36:58 IST freelancer.in API: 22/22 queries ok, 78 unique projects since 1795766792
@@ -498,3 +494,7 @@
 2026-11-27 20:34:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 20:35:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:35:16 IST scan done: 61 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 20:37:00 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795781193
+2026-11-27 20:37:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 20:37:17 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 20:37:17 IST scan done: 60 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
