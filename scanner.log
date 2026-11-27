@@ -1,7 +1,3 @@
-2026-11-27 17:01:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 17:01:12 IST scan done: 72 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 17:02:59 IST freelancer.in API: 22/22 queries ok, 71 unique projects since 1795768353
-2026-11-27 17:02:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 17:03:02 IST fit 0.0/10 'Press Release for Business Launch' matched=['website']
 2026-11-27 17:03:14 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 17:03:14 IST scan done: 71 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Press Release for Business Launch=0.0
@@ -498,3 +494,7 @@
 2026-11-27 21:01:02 IST fit 2.4/10 'US-Based Voice Recording Talent Needed – Ongoing Opportunity' matched=['prompt engineering']
 2026-11-27 21:01:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 21:01:16 IST scan done: 61 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: US-Based Voice Recording Talent Needed –=2.4
+2026-11-27 21:02:59 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795782753
+2026-11-27 21:02:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 21:03:14 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 21:03:14 IST scan done: 60 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
