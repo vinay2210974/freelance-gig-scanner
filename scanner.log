@@ -1,7 +1,3 @@
-2026-11-26 21:32:12 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 21:32:14 IST fit 1.3/10 'Bet365-Style Sports Betting Platform' matched=['api integration', 'api', 'website']
-2026-11-26 21:32:30 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 21:32:30 IST scan done: 73 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Bet365-Style Sports Betting Platform=1.3
 2026-11-26 21:34:09 IST freelancer.in API: 22/22 queries ok, 74 unique projects since 1795698222
 2026-11-26 21:34:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 21:34:10 IST fit 0.0/10 'Grow Brazilian WhatsApp Community MA' matched=['whatsapp']
@@ -498,3 +494,7 @@
 2026-11-27 09:34:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 09:34:39 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 09:34:39 IST scan done: 39 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 09:36:32 IST freelancer.in API: 22/22 queries ok, 38 unique projects since 1795741567
+2026-11-27 09:36:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 09:36:38 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 09:36:38 IST scan done: 38 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
