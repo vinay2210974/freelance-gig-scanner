@@ -1,7 +1,3 @@
-2026-11-27 14:18:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 14:18:48 IST fit 0.0/10 'E-commerce Ads Growth Specialist Needed' matched=[]
-2026-11-27 14:19:16 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 14:19:16 IST scan done: 86 fetched, 18 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: E-commerce Ads Growth Specialist Needed=0.0
 2026-11-27 14:20:46 IST freelancer.in API: 22/22 queries ok, 87 unique projects since 1795758620
 2026-11-27 14:20:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 14:20:48 IST fit 0.0/10 'Organize Excel Data for JTL-Wawi -- 2' matched=[]
@@ -498,3 +494,7 @@
 2026-11-27 18:17:04 IST fit 3.6/10 'Senior Cloud Engineers Needed for IT Infrastructure and Operations' matched=['python', 'automation', 'ai']
 2026-11-27 18:17:18 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 18:17:18 IST scan done: 61 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Senior Cloud Engineers Needed for IT Inf=3.6
+2026-11-27 18:18:58 IST freelancer.in API: 22/22 queries ok, 64 unique projects since 1795772912
+2026-11-27 18:18:58 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 18:19:15 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 18:19:15 IST scan done: 64 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
