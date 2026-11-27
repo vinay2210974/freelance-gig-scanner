@@ -1,7 +1,3 @@
-2026-11-27 14:38:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 14:39:14 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 14:39:14 IST scan done: 82 fetched, 17 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 14:40:47 IST freelancer.in API: 22/22 queries ok, 82 unique projects since 1795759820
 2026-11-27 14:40:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 14:41:14 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 14:41:14 IST scan done: 82 fetched, 17 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-27 18:37:02 IST fit 0.0/10 'Stage Lighting Online Sales Executives Needed' matched=[]
 2026-11-27 18:37:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 18:37:16 IST scan done: 59 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Stage Lighting Online Sales Executives N=0.0
+2026-11-27 18:38:58 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795774112
+2026-11-27 18:38:58 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 18:39:14 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 18:39:14 IST scan done: 59 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
