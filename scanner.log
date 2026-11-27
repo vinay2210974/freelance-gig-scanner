@@ -1,7 +1,3 @@
-2026-11-27 16:30:59 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795766432
-2026-11-27 16:30:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 16:31:01 IST fit 0.0/10 'Scale Google Ads for Captcha App' matched=[]
-2026-11-27 16:31:14 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 16:31:14 IST scan done: 80 fetched, 9 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Scale Google Ads for Captcha App=0.0
 2026-11-27 16:32:59 IST freelancer.in API: 22/22 queries ok, 79 unique projects since 1795766553
 2026-11-27 16:32:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-27 20:30:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 20:31:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:31:16 IST scan done: 61 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 20:33:00 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795780953
+2026-11-27 20:33:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 20:33:17 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 20:33:17 IST scan done: 60 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
