@@ -1,7 +1,3 @@
-2026-11-26 20:54:08 IST freelancer.in API: 22/22 queries ok, 69 unique projects since 1795695822
-2026-11-26 20:54:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 20:54:12 IST fit 0.0/10 'Ableton Beat-Making Tutor Needed' matched=[]
-2026-11-26 20:54:24 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 20:54:24 IST scan done: 69 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Ableton Beat-Making Tutor Needed=0.0
 2026-11-26 20:56:08 IST freelancer.in API: 22/22 queries ok, 67 unique projects since 1795695942
 2026-11-26 20:56:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-27 08:54:34 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 08:54:46 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 08:54:46 IST scan done: 41 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 08:56:34 IST freelancer.in API: 22/22 queries ok, 42 unique projects since 1795739167
+2026-11-27 08:56:34 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 08:56:46 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 08:56:46 IST scan done: 42 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
