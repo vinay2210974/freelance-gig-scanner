@@ -1,7 +1,3 @@
-2026-11-26 23:16:19 IST freelancer.in API: 22/22 queries ok, 82 unique projects since 1795704353
-2026-11-26 23:16:19 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 23:16:41 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 23:16:41 IST scan done: 82 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-26 23:18:20 IST freelancer.in API: 22/22 queries ok, 85 unique projects since 1795704473
 2026-11-26 23:18:20 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 23:18:23 IST fit 0.0/10 'Lead Generation with WhatsApp and email -- 2' matched=['whatsapp']
@@ -498,3 +494,7 @@
 2026-11-27 11:22:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 11:23:00 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 11:23:00 IST scan done: 50 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 11:24:47 IST freelancer.in API: 22/22 queries ok, 50 unique projects since 1795748060
+2026-11-27 11:24:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 11:25:02 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 11:25:02 IST scan done: 50 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
