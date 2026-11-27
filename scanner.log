@@ -1,7 +1,3 @@
-2026-11-26 22:06:24 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 22:06:24 IST scan done: 78 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Pediatric Constipation Clinical Reflecti=3.4
-2026-11-26 22:08:09 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795700262
-2026-11-26 22:08:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 22:08:10 IST fit 0.3/10 'Especialista em Crescimento de Comunidade no WhatsApp – Comunidade Brasileira MA (Português Brasileiro)' matched=['whatsapp']
 2026-11-26 22:08:24 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 22:08:24 IST scan done: 80 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Especialista em Crescimento de Comunidad=0.3
@@ -498,3 +494,7 @@
 2026-11-27 10:10:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 10:10:44 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 10:10:44 IST scan done: 42 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 10:12:31 IST freelancer.in API: 22/22 queries ok, 42 unique projects since 1795743726
+2026-11-27 10:12:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 10:12:41 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 10:12:41 IST scan done: 42 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
