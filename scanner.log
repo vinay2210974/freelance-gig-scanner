@@ -1,4 +1,3 @@
-2026-11-27 19:31:00 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 19:31:03 IST fit 0.0/10 'Engaging Social Media Community Setup' matched=['website']
 2026-11-27 19:31:19 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 19:31:19 IST scan done: 61 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Engaging Social Media Community Setup=0.0
@@ -498,3 +497,4 @@
 2026-11-27 23:40:43 IST outside scan window (now 2026-11-27 23:40 IST), skipping
 2026-11-27 23:50:43 IST outside scan window (now 2026-11-27 23:50 IST), skipping
 2026-11-28 00:00:43 IST outside scan window (now 2026-11-28 00:00 IST), skipping
+2026-11-28 00:10:43 IST outside scan window (now 2026-11-28 00:10 IST), skipping
