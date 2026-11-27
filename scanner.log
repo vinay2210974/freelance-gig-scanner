@@ -1,7 +1,3 @@
-2026-11-26 22:42:31 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 22:42:31 IST scan done: 85 fetched, 14 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Lead Generation with WhatsApp=0.0
-2026-11-26 22:44:09 IST freelancer.in API: 22/22 queries ok, 86 unique projects since 1795702422
-2026-11-26 22:44:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 22:44:31 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 22:44:31 IST scan done: 86 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-26 22:46:07 IST freelancer.in API: 22/22 queries ok, 85 unique projects since 1795702541
@@ -498,3 +494,7 @@
 2026-11-27 10:48:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 10:48:59 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 10:48:59 IST scan done: 45 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 10:50:46 IST freelancer.in API: 22/22 queries ok, 46 unique projects since 1795746018
+2026-11-27 10:50:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 10:50:59 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 10:50:59 IST scan done: 46 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
