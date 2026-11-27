@@ -1,7 +1,3 @@
-2026-11-27 16:19:00 IST fit 0.0/10 'Creating Database Romania Companies' matched=['scraping']
-2026-11-27 16:19:03 IST fit 0.0/10 'Site Verifier Needed in Wisconsin, USA' matched=[]
-2026-11-27 16:19:16 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 16:19:16 IST scan done: 82 fetched, 11 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Creating Database Romania Companies=0.0, Site Verifier Needed in Wisconsin, USA=0.0
 2026-11-27 16:20:59 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795765833
 2026-11-27 16:20:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 16:21:13 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +494,7 @@
 2026-11-27 20:18:58 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 20:19:15 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:19:15 IST scan done: 63 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 20:20:59 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795780232
+2026-11-27 20:20:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 20:21:15 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 20:21:15 IST scan done: 62 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
