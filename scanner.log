@@ -1,8 +1,3 @@
-2026-11-27 13:49:15 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 13:49:15 IST scan done: 80 fetched, 18 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 13:50:46 IST freelancer.in API: 22/22 queries ok, 81 unique projects since 1795756819
-2026-11-27 13:50:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 13:51:17 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 13:51:17 IST scan done: 81 fetched, 19 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 13:52:46 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795756939
 2026-11-27 13:52:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +493,8 @@
 2026-11-27 17:47:01 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 17:47:17 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 17:47:17 IST scan done: 66 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 17:48:59 IST freelancer.in API: 22/22 queries ok, 69 unique projects since 1795771112
+2026-11-27 17:48:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 17:49:02 IST fit 0.0/10 'Telecalling Warm Leads for Hydraulics Cylinders' matched=['whatsapp']
+2026-11-27 17:49:16 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 17:49:16 IST scan done: 69 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Telecalling Warm Leads for Hydraulics Cy=0.0
