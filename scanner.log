@@ -1,7 +1,3 @@
-2026-11-26 20:24:25 IST scan done: 67 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Scale Amazon US Sales Performance=0.0
-2026-11-26 20:26:07 IST freelancer.in API: 22/22 queries ok, 68 unique projects since 1795694141
-2026-11-26 20:26:07 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 20:26:14 IST fit 0.0/10 'Mudroom and Garage Addition Blueprint' matched=['website']
 2026-11-26 20:26:25 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 20:26:25 IST scan done: 68 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Mudroom and Garage Addition Blueprint=0.0
 2026-11-26 20:28:07 IST freelancer.in API: 22/22 queries ok, 67 unique projects since 1795694261
@@ -498,3 +494,7 @@
 2026-11-27 08:26:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 08:26:40 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 08:26:40 IST scan done: 38 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 08:28:31 IST freelancer.in API: 22/22 queries ok, 39 unique projects since 1795737486
+2026-11-27 08:28:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 08:28:40 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 08:28:40 IST scan done: 39 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
