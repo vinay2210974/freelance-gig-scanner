@@ -1,8 +1,3 @@
-2026-11-27 16:01:09 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 16:01:09 IST scan done: 84 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 16:02:47 IST freelancer.in API: 22/22 queries ok, 82 unique projects since 1795764740
-2026-11-27 16:02:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 16:03:08 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 16:03:08 IST scan done: 82 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 16:04:47 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795764860
 2026-11-27 16:04:47 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +493,8 @@
 2026-11-27 20:00:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 20:01:16 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:01:16 IST scan done: 63 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 20:02:59 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795779153
+2026-11-27 20:02:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 20:03:02 IST fit 1.1/10 'AI Comedy Shorts Creator' matched=['ai']
+2026-11-27 20:03:17 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 20:03:17 IST scan done: 61 fetched, 11 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: AI Comedy Shorts Creator=1.1
