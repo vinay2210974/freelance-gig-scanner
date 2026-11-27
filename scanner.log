@@ -1,7 +1,3 @@
-2026-11-27 12:00:46 IST freelancer.in API: 22/22 queries ok, 58 unique projects since 1795750220
-2026-11-27 12:00:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 12:01:04 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 12:01:04 IST scan done: 58 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 12:02:46 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795750339
 2026-11-27 12:02:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 12:02:48 IST fit 0.9/10 '1,200-Word SEO Fitness Article low kd research and high search volume' matched=['ai']
@@ -498,3 +494,7 @@
 2026-11-27 15:56:46 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 15:57:07 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 15:57:07 IST scan done: 83 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 15:58:45 IST freelancer.in API: 22/22 queries ok, 84 unique projects since 1795764499
+2026-11-27 15:58:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 15:59:06 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 15:59:06 IST scan done: 84 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
