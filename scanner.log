@@ -1,8 +1,3 @@
-2026-11-27 16:41:12 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 16:41:12 IST scan done: 75 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 16:42:59 IST freelancer.in API: 22/22 queries ok, 75 unique projects since 1795767153
-2026-11-27 16:42:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 16:43:13 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 16:43:13 IST scan done: 75 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 16:44:59 IST freelancer.in API: 22/22 queries ok, 76 unique projects since 1795767272
 2026-11-27 16:44:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +493,8 @@
 2026-11-27 20:42:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 20:43:15 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:43:15 IST scan done: 56 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 20:44:59 IST freelancer.in API: 22/22 queries ok, 58 unique projects since 1795781672
+2026-11-27 20:44:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 20:45:02 IST fit 2.5/10 'Compelling Mountain Real Estate Shorts' matched=['ai', 'prompt engineering']
+2026-11-27 20:45:18 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 20:45:18 IST scan done: 58 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Compelling Mountain Real Estate Shorts=2.5
