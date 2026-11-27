@@ -1,7 +1,3 @@
-2026-11-26 20:10:21 IST scan done: 60 fetched, 8 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Site Verification in Vinh Long, Vietnam =0.0
-2026-11-26 20:12:09 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795693302
-2026-11-26 20:12:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 20:12:10 IST fit 0.0/10 'Site Verification in Karachi, Pakistan.' matched=[]
 2026-11-26 20:12:12 IST fit 0.0/10 'Site Verification in Vinh Long, Vietnam  -- 2' matched=[]
 2026-11-26 20:12:23 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 20:12:23 IST scan done: 62 fetched, 9 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Site Verification in Karachi, Pakistan.=0.0, Site Verification in Vinh Long, Vietnam =0.0
@@ -498,3 +494,7 @@
 2026-11-27 08:10:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 08:10:43 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 08:10:43 IST scan done: 39 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 08:12:35 IST freelancer.in API: 22/22 queries ok, 39 unique projects since 1795736526
+2026-11-27 08:12:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 08:12:47 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 08:12:47 IST scan done: 39 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
