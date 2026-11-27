@@ -1,7 +1,3 @@
-2026-11-26 21:08:22 IST webhook: pending empty (fit_alert 5.0)
-2026-11-26 21:08:22 IST scan done: 66 fetched, 8 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Polish & Censor Teaching Videos=0.0
-2026-11-26 21:10:08 IST freelancer.in API: 22/22 queries ok, 68 unique projects since 1795696782
-2026-11-26 21:10:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-26 21:10:23 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 21:10:23 IST scan done: 68 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-26 21:12:08 IST freelancer.in API: 22/22 queries ok, 67 unique projects since 1795696901
@@ -498,3 +494,7 @@
 2026-11-27 09:10:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 09:10:43 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 09:10:43 IST scan done: 39 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 09:12:32 IST freelancer.in API: 22/22 queries ok, 41 unique projects since 1795740126
+2026-11-27 09:12:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 09:12:43 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 09:12:43 IST scan done: 41 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
