@@ -1,7 +1,3 @@
-2026-11-26 22:04:25 IST scan done: 78 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Real-World Activity Video Recording Proj=0.0
-2026-11-26 22:06:08 IST freelancer.in API: 22/22 queries ok, 78 unique projects since 1795700141
-2026-11-26 22:06:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-26 22:06:09 IST fit 3.4/10 'Pediatric Constipation Clinical Reflection' matched=['gpt', 'website', 'ai']
 2026-11-26 22:06:24 IST webhook: pending empty (fit_alert 5.0)
 2026-11-26 22:06:24 IST scan done: 78 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Pediatric Constipation Clinical Reflecti=3.4
 2026-11-26 22:08:09 IST freelancer.in API: 22/22 queries ok, 80 unique projects since 1795700262
@@ -498,3 +494,7 @@
 2026-11-27 10:08:31 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-27 10:08:42 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 10:08:42 IST scan done: 43 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-27 10:10:32 IST freelancer.in API: 22/22 queries ok, 42 unique projects since 1795743607
+2026-11-27 10:10:32 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-27 10:10:44 IST webhook: pending empty (fit_alert 5.0)
+2026-11-27 10:10:44 IST scan done: 42 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
