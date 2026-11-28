@@ -1,7 +1,3 @@
-2026-11-28 12:39:36 IST freelancer.in API: 22/22 queries ok, 46 unique projects since 1795838950
-2026-11-28 12:39:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 12:39:57 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 12:39:57 IST scan done: 46 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 12:41:35 IST freelancer.in API: 22/22 queries ok, 49 unique projects since 1795839071
 2026-11-28 12:41:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 12:41:37 IST fit 7.9/10 'Batch Quiz Question Generator' matched=['openai', 'azure openai', 'python', 'api', 'automation', 'prompt engineering']
@@ -498,3 +494,7 @@
 2026-11-28 16:37:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 16:37:58 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 16:37:58 IST scan done: 60 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 16:39:45 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795853360
+2026-11-28 16:39:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 16:39:59 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 16:39:59 IST scan done: 60 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
