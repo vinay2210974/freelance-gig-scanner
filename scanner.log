@@ -1,8 +1,3 @@
-2026-11-28 14:21:52 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 14:21:52 IST scan done: 60 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 14:23:37 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795845190
-2026-11-28 14:23:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 14:23:53 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 14:23:53 IST scan done: 61 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 14:25:35 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795845311
 2026-11-28 14:25:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +493,8 @@
 2026-11-28 18:19:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 18:19:39 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 18:19:39 IST scan done: 62 fetched, 15 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 18:21:15 IST freelancer.in API: 22/22 queries ok, 64 unique projects since 1795859450
+2026-11-28 18:21:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 18:21:17 IST fit 1.7/10 'DevOps Mentor / Freelancer: Hands-on Kubernetes, Docker, AWS, Jenkins, Prometheus & Grafana' matched=['web app']
+2026-11-28 18:21:40 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 18:21:40 IST scan done: 64 fetched, 16 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: DevOps Mentor / Freelancer: Hands-on Kub=1.7
