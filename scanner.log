@@ -1,8 +1,3 @@
-2026-11-27 20:45:18 IST webhook: pending empty (fit_alert 5.0)
-2026-11-27 20:45:18 IST scan done: 58 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Compelling Mountain Real Estate Shorts=2.5
-2026-11-27 20:46:59 IST freelancer.in API: 22/22 queries ok, 57 unique projects since 1795781792
-2026-11-27 20:46:59 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 20:47:03 IST fit 0.0/10 'CheckBook Pro Account Setup' matched=[]
 2026-11-27 20:47:15 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 20:47:15 IST scan done: 57 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: CheckBook Pro Account Setup=0.0
 2026-11-27 20:49:01 IST freelancer.in API: 22/22 queries ok, 57 unique projects since 1795781912
@@ -498,3 +493,8 @@
 2026-11-28 08:49:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 08:49:31 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 08:49:31 IST scan done: 39 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 08:51:24 IST freelancer.in API: 22/22 queries ok, 42 unique projects since 1795825257
+2026-11-28 08:51:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 08:51:25 IST fit 1.7/10 'Make My 3D Printed Translucent Multicolor Shape Design.' matched=['ai']
+2026-11-28 08:51:37 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 08:51:37 IST scan done: 42 fetched, 8 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Make My 3D Printed Translucent Multicolo=1.7
