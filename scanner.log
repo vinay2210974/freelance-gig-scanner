@@ -1,8 +1,3 @@
-2026-11-28 08:55:23 IST freelancer.in API: 22/22 queries ok, 43 unique projects since 1795825497
-2026-11-28 08:55:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 08:55:32 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 08:55:32 IST scan done: 43 fetched, 6 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 08:57:23 IST freelancer.in API: 22/22 queries ok, 43 unique projects since 1795825617
 2026-11-28 08:57:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 08:57:31 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 08:57:31 IST scan done: 43 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +493,8 @@
 2026-11-28 12:57:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 12:57:55 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 12:57:55 IST scan done: 50 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 12:59:35 IST freelancer.in API: 22/22 queries ok, 55 unique projects since 1795840150
+2026-11-28 12:59:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 12:59:41 IST fit 0.0/10 'Invoice Verification & Spreadsheet Entry' matched=[]
+2026-11-28 12:59:58 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 12:59:58 IST scan done: 55 fetched, 14 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Invoice Verification & Spreadsheet Entry=0.0
