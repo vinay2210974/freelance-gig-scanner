@@ -1,7 +1,3 @@
-2026-11-27 22:09:22 IST scan done: 60 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-27 22:11:08 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795786843
-2026-11-27 22:11:08 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-27 22:11:20 IST webhook: pending empty (fit_alert 5.0)
 2026-11-27 22:11:20 IST scan done: 59 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-27 22:13:09 IST freelancer.in API: 22/22 queries ok, 57 unique projects since 1795786963
 2026-11-27 22:13:09 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-28 10:15:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 10:15:48 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 10:15:48 IST scan done: 41 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 10:17:35 IST freelancer.in API: 22/22 queries ok, 41 unique projects since 1795830430
+2026-11-28 10:17:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 10:17:46 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 10:17:46 IST scan done: 41 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
