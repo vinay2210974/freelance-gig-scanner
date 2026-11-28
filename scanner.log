@@ -1,8 +1,3 @@
-2026-11-28 13:31:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 13:31:54 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 13:31:54 IST scan done: 59 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 13:33:35 IST freelancer.in API: 22/22 queries ok, 56 unique projects since 1795842190
-2026-11-28 13:33:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 13:33:52 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 13:33:52 IST scan done: 56 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 13:35:35 IST freelancer.in API: 22/22 queries ok, 56 unique projects since 1795842310
@@ -498,3 +493,8 @@
 2026-11-28 17:33:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 17:33:37 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 17:33:37 IST scan done: 58 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 17:35:15 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795856690
+2026-11-28 17:35:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 17:35:17 IST fit 0.0/10 'Immediate CapCut Video Enhancement' matched=['website']
+2026-11-28 17:35:39 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 17:35:39 IST scan done: 59 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Immediate CapCut Video Enhancement=0.0
