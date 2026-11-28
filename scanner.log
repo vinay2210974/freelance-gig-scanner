@@ -1,7 +1,3 @@
-2026-11-28 16:57:45 IST freelancer.in API: 22/22 queries ok, 63 unique projects since 1795854441
-2026-11-28 16:57:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 16:57:47 IST fit 2.3/10 'Desktop Thermometer App Field Trial(only from Uk' matched=['api', 'website']
-2026-11-28 16:58:09 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 16:58:09 IST scan done: 63 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Desktop Thermometer App Field Trial(only=2.3
 2026-11-28 16:59:44 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795854560
 2026-11-28 16:59:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +494,7 @@
 2026-11-28 20:53:39 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 20:53:53 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 20:53:53 IST scan done: 63 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 20:55:39 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795868713
+2026-11-28 20:55:39 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 20:55:52 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 20:55:52 IST scan done: 62 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
