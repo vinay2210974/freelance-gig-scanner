@@ -1,7 +1,3 @@
-2026-11-28 11:07:48 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 11:07:48 IST scan done: 46 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 11:09:36 IST freelancer.in API: 22/22 queries ok, 46 unique projects since 1795833550
-2026-11-28 11:09:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 11:09:48 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 11:09:48 IST scan done: 46 fetched, 7 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 11:11:37 IST freelancer.in API: 22/22 queries ok, 46 unique projects since 1795833670
@@ -498,3 +494,7 @@
 2026-11-28 15:07:49 IST fit 0.0/10 'Worldwide Mobile App Marketing & User Acquisition Specialist Needed' matched=[]
 2026-11-28 15:08:01 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 15:08:01 IST scan done: 62 fetched, 10 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Convert Boat Photos to RC CAD=0.0, Worldwide Mobile App Marketing & User Ac=0.0
+2026-11-28 15:09:45 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795847960
+2026-11-28 15:09:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 15:09:53 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 15:09:53 IST scan done: 60 fetched, 5 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
