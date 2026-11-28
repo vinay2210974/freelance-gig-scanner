@@ -1,7 +1,3 @@
-2026-11-28 14:07:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 14:07:58 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 14:07:58 IST scan done: 62 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 14:09:36 IST freelancer.in API: 22/22 queries ok, 63 unique projects since 1795844350
 2026-11-28 14:09:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 14:09:58 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 14:09:58 IST scan done: 63 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-28 18:05:17 IST fit 1.2/10 'Multi-Period Ledger Reconciliation Cleanup' matched=[]
 2026-11-28 18:05:40 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 18:05:40 IST scan done: 61 fetched, 16 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Multi-Period Ledger Reconciliation Clean=1.2
+2026-11-28 18:07:17 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795858610
+2026-11-28 18:07:17 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 18:07:40 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 18:07:40 IST scan done: 60 fetched, 15 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
