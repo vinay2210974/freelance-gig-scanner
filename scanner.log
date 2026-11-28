@@ -1,7 +1,3 @@
-2026-11-28 16:19:45 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795852161
-2026-11-28 16:19:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 16:19:58 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 16:19:58 IST scan done: 62 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 16:21:45 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795852281
 2026-11-28 16:21:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 16:21:58 IST webhook: pending empty (fit_alert 5.0)
@@ -498,3 +494,7 @@
 2026-11-28 20:15:16 IST fit 1.7/10 'Travel Linkbuilding & Parasite SEO' matched=['ai']
 2026-11-28 20:15:34 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 20:15:34 IST scan done: 66 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Travel Linkbuilding & Parasite SEO=1.7
+2026-11-28 20:17:16 IST freelancer.in API: 22/22 queries ok, 66 unique projects since 1795866411
+2026-11-28 20:17:16 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 20:17:31 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 20:17:31 IST scan done: 66 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
