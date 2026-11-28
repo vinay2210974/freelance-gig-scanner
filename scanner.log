@@ -1,8 +1,3 @@
-2026-11-28 14:13:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 14:13:59 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 14:13:59 IST scan done: 63 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 14:15:34 IST freelancer.in API: 22/22 queries ok, 63 unique projects since 1795844710
-2026-11-28 14:15:34 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 14:15:55 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 14:15:55 IST scan done: 63 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 14:17:36 IST freelancer.in API: 22/22 queries ok, 63 unique projects since 1795844830
@@ -498,3 +493,8 @@
 2026-11-28 18:11:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 18:11:36 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 18:11:36 IST scan done: 60 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 18:13:15 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795858970
+2026-11-28 18:13:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 18:13:16 IST fit 1.7/10 'looking for students from various streams and college/ schools, to upload high quality notes. students should be high skilled, no AI, NO BOT, NO PLAGIARISM. contributor should be owner' matched=['ai']
+2026-11-28 18:13:39 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 18:13:39 IST scan done: 61 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: looking for students from various stream=1.7
