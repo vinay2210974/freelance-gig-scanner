@@ -1,7 +1,3 @@
-2026-11-28 08:45:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 08:45:29 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 08:45:29 IST scan done: 37 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 08:47:24 IST freelancer.in API: 22/22 queries ok, 38 unique projects since 1795825018
 2026-11-28 08:47:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 08:47:30 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 08:47:30 IST scan done: 38 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-28 12:48:01 IST webhook: drop risk-management/Bank-GRC-System-Implementation live bids 19 status active
 2026-11-28 12:48:01 IST webhook: nothing biddable after live recheck
 2026-11-28 12:48:01 IST scan done: 51 fetched, 15 page-checked, 2 passed hard filters, 1 shortlisted (>= fit_alert 5.0), scores: Bank GRC System Implementation=5.0, Desktop Thermometer App Field Trial(only=2.3
+2026-11-28 12:49:35 IST freelancer.in API: 22/22 queries ok, 51 unique projects since 1795839551
+2026-11-28 12:49:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 12:49:54 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 12:49:54 IST scan done: 51 fetched, 12 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
