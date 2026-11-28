@@ -1,10 +1,3 @@
-2026-11-28 12:59:58 IST scan done: 55 fetched, 14 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Invoice Verification & Spreadsheet Entry=0.0
-2026-11-28 13:01:37 IST freelancer.in API: 22/22 queries ok, 54 unique projects since 1795840271
-2026-11-28 13:01:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 13:01:58 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 13:01:58 IST scan done: 54 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 13:03:36 IST freelancer.in API: 22/22 queries ok, 54 unique projects since 1795840390
-2026-11-28 13:03:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 13:03:58 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 13:03:58 IST scan done: 54 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 13:05:34 IST freelancer.in API: 22/22 queries ok, 54 unique projects since 1795840510
@@ -498,3 +491,10 @@
 2026-11-28 17:01:48 IST fit 0.0/10 'Business Letterhead Design in PDF' matched=[]
 2026-11-28 17:02:10 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 17:02:10 IST scan done: 63 fetched, 16 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Custom Polos and T-Shirts Design=0.0, Business Letterhead Design in PDF=0.0
+2026-11-28 17:04:24 IST query 'intelligence' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
+2026-11-28 17:05:18 IST query 'api' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
+2026-11-28 17:05:53 IST query 'email' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
+2026-11-28 17:06:28 IST freelancer.in API: 19/22 queries ok, 61 unique projects since 1795854800
+2026-11-28 17:06:28 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 17:06:48 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 17:06:48 IST scan done: 61 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
