@@ -1,7 +1,3 @@
-2026-11-28 12:19:58 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 12:19:58 IST scan done: 44 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 12:21:35 IST freelancer.in API: 22/22 queries ok, 46 unique projects since 1795837871
-2026-11-28 12:21:35 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 12:21:38 IST fit 0.0/10 'Meta Business Manager Fix ' matched=['website']
 2026-11-28 12:22:00 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 12:22:00 IST scan done: 46 fetched, 15 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Meta Business Manager Fix =0.0
@@ -498,3 +494,7 @@
 2026-11-28 16:17:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 16:18:00 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 16:18:00 IST scan done: 62 fetched, 10 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 16:19:45 IST freelancer.in API: 22/22 queries ok, 62 unique projects since 1795852161
+2026-11-28 16:19:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 16:19:58 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 16:19:58 IST scan done: 62 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
