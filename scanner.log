@@ -1,7 +1,3 @@
-2026-11-28 15:39:58 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 15:39:58 IST scan done: 62 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 15:41:45 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795849880
-2026-11-28 15:41:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 15:41:57 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 15:41:57 IST scan done: 60 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 15:43:45 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795850000
@@ -498,3 +494,7 @@
 2026-11-28 19:35:20 IST fit 0.7/10 'Radio Module PCB Reengineering' matched=[]
 2026-11-28 19:35:42 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 19:35:42 IST scan done: 62 fetched, 16 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Radio Module PCB Reengineering=0.7
+2026-11-28 19:37:15 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795864010
+2026-11-28 19:37:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 19:37:35 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 19:37:35 IST scan done: 61 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
