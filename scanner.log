@@ -1,8 +1,3 @@
-2026-11-28 17:49:16 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 17:49:36 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 17:49:36 IST scan done: 60 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 17:51:16 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795857651
-2026-11-28 17:51:16 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 17:51:36 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 17:51:36 IST scan done: 61 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 17:53:15 IST freelancer.in API: 22/22 queries ok, 61 unique projects since 1795857770
@@ -498,3 +493,8 @@
 2026-11-28 21:51:01 IST fit 0.0/10 'Low-Budget Camverz User Acquisition' matched=[]
 2026-11-28 21:51:20 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 21:51:20 IST scan done: 62 fetched, 13 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Low-Budget Camverz User Acquisition=0.0
+2026-11-28 21:52:58 IST freelancer.in API: 22/22 queries ok, 63 unique projects since 1795872152
+2026-11-28 21:52:58 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 21:53:00 IST fit 1.2/10 'Hillah, Al Balsam Building, Iraq Exterior Photos of an address' matched=[]
+2026-11-28 21:53:19 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 21:53:19 IST scan done: 63 fetched, 13 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Hillah, Al Balsam Building, Iraq Exterio=1.2
