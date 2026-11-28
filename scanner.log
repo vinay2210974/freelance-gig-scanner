@@ -1,7 +1,3 @@
-2026-11-28 12:41:59 IST webhook: drop python/Batch-Quiz-Question-Generator live bids 17 status active
-2026-11-28 12:41:59 IST webhook: nothing biddable after live recheck
-2026-11-28 12:41:59 IST scan done: 49 fetched, 15 page-checked, 2 passed hard filters, 1 shortlisted (>= fit_alert 5.0), scores: Batch Quiz Question Generator=7.9, Developmental Edit and Beta Reader for H=1.2
-2026-11-28 12:43:37 IST freelancer.in API: 22/22 queries ok, 49 unique projects since 1795839191
 2026-11-28 12:43:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 12:43:58 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 12:43:58 IST scan done: 49 fetched, 13 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +494,7 @@
 2026-11-28 16:41:47 IST fit 0.0/10 'Etsy Handmade Listings Setup' matched=['dashboard']
 2026-11-28 16:42:01 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 16:42:01 IST scan done: 61 fetched, 10 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Etsy Handmade Listings Setup=0.0
+2026-11-28 16:43:45 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795853600
+2026-11-28 16:43:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 16:43:59 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 16:43:59 IST scan done: 60 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
