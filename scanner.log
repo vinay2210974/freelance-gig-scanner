@@ -1,7 +1,3 @@
-2026-11-28 17:01:48 IST fit 0.0/10 'Business Letterhead Design in PDF' matched=[]
-2026-11-28 17:02:10 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 17:02:10 IST scan done: 63 fetched, 16 page-checked, 2 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Custom Polos and T-Shirts Design=0.0, Business Letterhead Design in PDF=0.0
-2026-11-28 17:04:24 IST query 'intelligence' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
 2026-11-28 17:05:18 IST query 'api' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
 2026-11-28 17:05:53 IST query 'email' failed: HTTPSConnectionPool(host='www.freelancer.in', port=443): Read timed out. (read timeout=30)
 2026-11-28 17:06:28 IST freelancer.in API: 19/22 queries ok, 61 unique projects since 1795854800
@@ -498,3 +494,7 @@
 2026-11-28 20:59:40 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 20:59:53 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 20:59:53 IST scan done: 61 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 21:01:40 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795869074
+2026-11-28 21:01:40 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 21:01:54 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 21:01:54 IST scan done: 60 fetched, 9 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
