@@ -1,11 +1,3 @@
-2026-11-28 08:41:24 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 08:41:30 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 08:41:30 IST scan done: 35 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 08:43:23 IST freelancer.in API: 22/22 queries ok, 35 unique projects since 1795824778
-2026-11-28 08:43:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 08:43:30 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 08:43:30 IST scan done: 35 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 08:45:23 IST freelancer.in API: 22/22 queries ok, 37 unique projects since 1795824897
 2026-11-28 08:45:23 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 08:45:29 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 08:45:29 IST scan done: 37 fetched, 4 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +490,11 @@
 2026-11-28 12:45:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 12:46:00 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 12:46:00 IST scan done: 50 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 12:47:36 IST freelancer.in API: 22/22 queries ok, 51 unique projects since 1795839430
+2026-11-28 12:47:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 12:47:38 IST fit 5.0/10 'Bank GRC System Implementation' matched=['automation workflow', 'dashboard', 'automation']
+2026-11-28 12:47:39 IST fit 2.3/10 'Desktop Thermometer App Field Trial(only from Uk) -- 2' matched=['api', 'website']
+2026-11-28 12:48:01 IST pending: added 1, queue 1
+2026-11-28 12:48:01 IST webhook: drop risk-management/Bank-GRC-System-Implementation live bids 19 status active
+2026-11-28 12:48:01 IST webhook: nothing biddable after live recheck
+2026-11-28 12:48:01 IST scan done: 51 fetched, 15 page-checked, 2 passed hard filters, 1 shortlisted (>= fit_alert 5.0), scores: Bank GRC System Implementation=5.0, Desktop Thermometer App Field Trial(only=2.3
