@@ -1,8 +1,3 @@
-2026-11-28 17:23:37 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 17:23:37 IST scan done: 61 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 17:25:15 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795856091
-2026-11-28 17:25:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 17:25:38 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 17:25:38 IST scan done: 60 fetched, 14 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
 2026-11-28 17:27:15 IST freelancer.in API: 22/22 queries ok, 60 unique projects since 1795856210
 2026-11-28 17:27:15 IST whatsapp direct alerts: off (WA_DIRECT=0)
@@ -498,3 +493,8 @@
 2026-11-28 21:21:40 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 21:21:57 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 21:21:57 IST scan done: 59 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 21:23:40 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795870393
+2026-11-28 21:23:40 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 21:23:43 IST fit 1.2/10 'Bronx Hip-Hop Music Video' matched=['ai']
+2026-11-28 21:23:59 IST webhook: pending empty (fit_alert 5.0)
+2026-11-28 21:23:59 IST scan done: 59 fetched, 12 page-checked, 1 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: Bronx Hip-Hop Music Video=1.2
