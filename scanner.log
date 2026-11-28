@@ -1,10 +1,3 @@
-2026-11-28 11:53:54 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 11:53:54 IST scan done: 37 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 11:55:36 IST freelancer.in API: 22/22 queries ok, 39 unique projects since 1795836310
-2026-11-28 11:55:36 IST whatsapp direct alerts: off (WA_DIRECT=0)
-2026-11-28 11:55:55 IST webhook: pending empty (fit_alert 5.0)
-2026-11-28 11:55:55 IST scan done: 39 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
-2026-11-28 11:57:37 IST freelancer.in API: 22/22 queries ok, 39 unique projects since 1795836430
 2026-11-28 11:57:37 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 11:57:55 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 11:57:55 IST scan done: 39 fetched, 11 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
@@ -498,3 +491,10 @@
 2026-11-28 15:53:44 IST whatsapp direct alerts: off (WA_DIRECT=0)
 2026-11-28 15:53:57 IST webhook: pending empty (fit_alert 5.0)
 2026-11-28 15:53:57 IST scan done: 57 fetched, 8 page-checked, 0 passed hard filters, 0 shortlisted (>= fit_alert 5.0), scores: none
+2026-11-28 15:55:45 IST freelancer.in API: 22/22 queries ok, 59 unique projects since 1795850721
+2026-11-28 15:55:45 IST whatsapp direct alerts: off (WA_DIRECT=0)
+2026-11-28 15:55:47 IST fit 8.2/10 'Veterinary AI Automation SaaS Development' matched=['openai', 'ai agent', 'python', 'automation workflow', 'dashboard', 'api integration', 'api', 'web app', 'react+ai', 'automation', 'ai', 'prompt engineering']
+2026-11-28 15:56:01 IST pending: added 1, queue 1
+2026-11-28 15:56:01 IST webhook: drop saas-development/Veterinary-Automation-SaaS-Development live bids 28 status active
+2026-11-28 15:56:01 IST webhook: nothing biddable after live recheck
+2026-11-28 15:56:01 IST scan done: 59 fetched, 10 page-checked, 1 passed hard filters, 1 shortlisted (>= fit_alert 5.0), scores: Veterinary AI Automation SaaS Developmen=8.2
